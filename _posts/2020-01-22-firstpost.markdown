@@ -2,7 +2,34 @@
 layout: "post"
 title: "This is instruction of jekyll"
 date: 2020-01-22 20:48:59 -0700
+author : 'mingi hong'
 ---
+
+## Instruction of jekyll
+
+# Installing jekyll
+
+{% highlight ruby %}
+sudo gem install jekyll
+{% endhighlight %}
+
+![jekyll1](/assets/jekyll1.png)
+![jekyll2](/assets/jekyll2.png)
+
+{% highlight ruby %}
+jekyll new mywebsite
+sudo gem install jekyll bundler
+{% endhighlight %}
+
+![jekyll3](/assets/jekyll3.png)
+
+{% highlight ruby %}
+bundle exec jekyll serve
+{% endhighlight %}
+
+![jekyll4](/assets/jekyll4.png)
+
+`go to localhost:4000 to see your website`
 
 Jekyll requires blog post files to be named according to the following format:
 
@@ -21,5 +48,20 @@ print_hi('Tom')
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll.
+
+
+# Connect with Git Hub Page(Free Hosting)
+
+![gh-pages](/assets/gh-pages.png)
+
+{% highlight ruby %}
+git init
+git checkout -b gh-pages
+git status
+git add .
+git commit -m "initial commit"
+git remote add origin "my repository url"
+git push origin gh-pages
+{% endhighlight %}
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

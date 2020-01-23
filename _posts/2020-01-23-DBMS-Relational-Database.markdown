@@ -7,7 +7,7 @@ categories: Computer DBMS
 permalink: /:categories/:title.html
 ---
 
-Relational Terminology
+# Relational Terminology
 1. Relations - what we have been referring to as simple linear files. Also called tables.
 2. Row = record(files) = tuple(relation)
 3. Column = field(files) = attribute(relation)
@@ -21,7 +21,7 @@ Relational Terminology
 8. One-to-Many
 9. Many-to-Many (composite relationship)
 
-Data Integration
+# Data Integration
 1. The relational algebra Join command
     - Cartesian Product
         {comparing every possible combination of two sets, or two relations.}
@@ -30,13 +30,13 @@ Data Integration
     - Natural join
         {one of the two identical join columns is eliminated.}
 
-How many foreign keys?
+**How many foreign keys?**
 
 ![CH5.Rent-A-Car](/assets/CH5.Rent-A-Car.png)
 
-There are two foreign keys in recording relationship.
+**There are two foreign keys in recording relationship.**
 
-Exercise
+## Exercise
 ![CH5.minicase1](/assets/CH5Minicase1.png)
 ![CH5.minicase2](/assets/CH5.Minicase2.png)
 ![CH5.minicase3](/assets/CH5.Minicase3.png)
