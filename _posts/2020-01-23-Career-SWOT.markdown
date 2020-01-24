@@ -28,13 +28,13 @@ Can find this information [here][naceweb]
  - Opportunities
  - Threats
 
-![SWOT1](/assets/swot1.png)
+![SWOT1](/minglab/assets/swot1.png)
 
-![SWOT2](/assets/swot2.png)
+![SWOT2](/minglab/assets/swot2.png)
 
 `Let's make our own SWOT`
 
-![myswot](/assets/myswotf.png)
+![myswot](/minglab/assets/myswotf.png)
 
 1. What are you known for doing well?
  - I'm good at making reasonable decision such as deciding schedule for team mostly everyone agrees or

@@ -7,7 +7,7 @@ categories: Computer OperatingSystem
 permalink: /:categories/:title.html
 ---
 
-![MIX_diagram](/assets/MIX_diagram.png)
+![MIX_diagram](/minglab/assets/MIX_diagram.png)
 
 # Process creation
 1. PID = fork()

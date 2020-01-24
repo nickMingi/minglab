@@ -13,21 +13,21 @@ author : 'mingi hong'
 sudo gem install jekyll
 {% endhighlight %}
 
-![jekyll1](/assets/jekyll1.png)
-![jekyll2](/assets/jekyll2.png)
+![jekyll1](/minglab/assets/jekyll1.png)
+![jekyll2](/minglab/assets/jekyll2.png)
 
 {% highlight ruby %}
 jekyll new mywebsite
 sudo gem install jekyll bundler
 {% endhighlight %}
 
-![jekyll3](/assets/jekyll3.png)
+![jekyll3](/minglab/assets/jekyll3.png)
 
 {% highlight ruby %}
 bundle exec jekyll serve
 {% endhighlight %}
 
-![jekyll4](/assets/jekyll4.png)
+![jekyll4](/minglab/assets/jekyll4.png)
 
 `go to localhost:4000 to see your website`
 
@@ -52,7 +52,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 # Connect with Git Hub Page(Free Hosting)
 
-![gh-pages](/assets/gh-pages.png)
+![gh-pages](/minglab/assets/gh-pages.png)
 
 {% highlight ruby %}
 git init

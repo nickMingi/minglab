@@ -37,12 +37,43 @@ permalink: /:categories/:title.html
 **There are two foreign keys in recording relationship.**
 
 ## Exercise
-![CH5.minicase1](/assets/CH5Minicase1.png)
-![CH5.minicase2](/assets/CH5.Minicase2.png)
-![CH5.minicase3](/assets/CH5.Minicase3.png)
-![CH5.minicase4](/assets/CH5.Minicase4.png)
+![CH5.minicase1](/minglab/assets/CH5Minicase1.png)
+![CH5.minicase2](/minglab/assets/CH5.Minicase2.png)
+![CH5.minicase3](/minglab/assets/CH5.Minicase3.png)
+![CH5.minicase4](/minglab/assets/CH5.Minicase4.png)
 
+a. Candidate Keys?
+- Ship Relation - Ship Number & Ship Name
+- Cruise Relation - Cruise Number & Cruise Director
+- Port Relation - Port Name & Port Manager
+- Visit Relation - Cruise Number Port Name Arrival Date
+- Passenger Relation - Passenger Number Passenger Name
+- Voyage Relation - Passenger Number Cruise Number Stateroom Number
 
+b. Primary Key
+- Ship Number
+- Cruise Number Ship Number
+- Port Name
+- Cruise Number Port Name
+- Passenger Number
+- Fore - Passenger Number, Cruise Number, Stateroom Number
+
+c. 
+- Ship: 0
+- Cruise: 1
+- Port: 0
+- Visit: 2
+- Passenger: 0
+- Voyage: 2
+
+d.
+- Cruise: Ship Number
+- Visit: Cruise Number
+- Port: Name
+- Voyage: Passenger Number, Cruise Number
+
+e.
+- For Visit and Voyage relations, both parts of their primary keys are also foreign keys. In the instance of Visit its the port name, country and cruise number where in Voyage it is the cruise number and passenger number. The reason for this is because both of the relations are many to many relationships.
 
 f. Identify the relations that support many-to-many relationships, the primary keys of those relations, and any intersection data.
 
