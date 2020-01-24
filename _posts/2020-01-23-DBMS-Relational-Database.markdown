@@ -32,7 +32,7 @@ permalink: /:categories/:title.html
 
 **How many foreign keys?**
 
-![CH5.Rent-A-Car](/assets/CH5.Rent-A-Car.png)
+![CH5.Rent-A-Car](/minglab/assets/CH5.Rent-A-Car.png)
 
 **There are two foreign keys in recording relationship.**
 
@@ -41,6 +41,7 @@ permalink: /:categories/:title.html
 ![CH5.minicase2](/assets/CH5.Minicase2.png)
 ![CH5.minicase3](/assets/CH5.Minicase3.png)
 ![CH5.minicase4](/assets/CH5.Minicase4.png)
+
 
 
 f. Identify the relations that support many-to-many relationships, the primary keys of those relations, and any intersection data.
