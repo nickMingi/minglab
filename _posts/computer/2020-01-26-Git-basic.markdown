@@ -1,0 +1,60 @@
+---
+layout: "post"
+title: "Git Basic Knowledge"
+author: "mingi hong"
+date: 2020-01-26 08:35:58 -0700
+categories: "Computer Knowledge"
+permalink: /:categories/:title.html
+---
+
+## GIT
+
+git 명령어 모음
+
+git clone
+
+git init  local repository로 이 폴더를 이용하기 위한 준비
+
+git status
+
+git add ?all
+
+git commit
+
+git branch
+
+git branch ‘’
+
+git checkout ‘’
+
+git remote add mingi
+
+git@github.com:nickMingi/javascript.git
+
+
+git@github.com:nickMingi/PERFECT-EMPTY-DAPP-master-.git
+
+git push -u mingi master
+
+ ! [rejected]        master -> master (fetch first)
+
+fatal: refusing to merge unrelated histories
+
+$ git pull origin master --allow-unrelated-histories
+
+$ git merge origin origin/master
+ ... add and commit here...
+
+$ git push origin master
+
+
+Commit history delete
+
+- git checkout ?orphan TEMP_BRANCH
+- git add -A
+- git commit -am “Initial commit”
+- git branch -D master
+- git branch -m master
+- git push -f origin master
+
+All set up
