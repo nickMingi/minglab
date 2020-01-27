@@ -91,3 +91,75 @@ ex) What is the probability of the following:
     - 3/41
 - Being dealt a jack and then a second jack in two consecutive cards?
     - 4/52*3/51 = 1/221
+
+# Roulette, Probability and Odds
+
+P(E) = Probability that event occurs
+
+0 <= P(E) <= 1
+
+P(E) is a decimal or a fraction
+
+P(E) = # of elementary events in E / # of elementary events
+
+P(E) = # of successful outcomes / # of trials 
+
+As # of trials goes to infinity, above two P(E) are the same
+
+Odds for E = P(E) / 1 - P(E) 
+
+Odds against E = 1 - P(E) / P(E) 
+
+They are reciprocal of each other
+
+Typically odds for /against are written as a:b
+
+So,the odds against would be written as b:a
+
+If the odds for E are a:b, then P(E) = a/a+b
+
+- Why? P(E)/1-P(E) :: a/b 
+- (1-P(E))a = P(E)b
+- a-P(E)a = P(E)b
+- a = P(E)b+P(E)a
+- a = P(E)(b+a)
+
+If the odds against E are a:b, then on a winning bet of $b you get a profit of $a.
+
+So you would get back your wager of $b plus an additional $a.
+
+ex) During the preseason the odds against winning the superbowl were:
+
+Kansas city Chiefs : 8:1
+
+San Francisco 49ers: 16:1
+
+Suppose you had bet $100 during the preseason that KC would win the superbowl and then they do:
+
+8/1 = 8:1 => bet $1 have profit of $8
+
+Same question but Win SF:
+
+36/1 = 36:1 => bet $1 have profit of $36
+
+ex) The KC chiefs currently have 5:6 odds against winning the superbowl.
+Suppose you bet $100 they win and they do.
+How much profit would you make on your bet?
+
+5/6 = 5:6 => bet $6 profit is $5 
+
+100/6 * 5 => $83.3
+
+ex) What are the odds against drawing a jack from a standard deck?
+
+Odds against = 1-P(E)/P(E) 
+
+1-4/52 / 4/52 = 12 
+
+The odds against drawing a jack is 12:1
+
+# Game Play : Roulette roulette77.us/american-roulette
+
+1. Scroll down to read rules first
+2. Play the game
+
