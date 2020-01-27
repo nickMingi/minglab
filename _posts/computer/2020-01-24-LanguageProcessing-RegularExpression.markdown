@@ -18,3 +18,139 @@ Even number of a's followed by any # of b's
 - RE: `(aa)*bb * | aa(aa)* b* `
 - DFA: ![RegularExpression1](/minglab/assets/regularexpression1.png)
 
+# Assignment
+
+Input file: (named inp)
+
+this is a
+
+3 line file < 4 lines
+
+to run 3 + 5 = 8 fun
+
+command to run: % ./a.out < inp
+
+output:
+
+
+
+Assume now a few more notational conveniences
+
+Named sets, named RE's
+
+D = (0|1|2|3|4|5|6|7|8|9)
+L = (a|b|....z|A|B|...|Z)
+
+C language ID? = L ( L | D | _ )*
+
+id =
+
+posIntLit = D D*    D+
+
+signedIntLit = -8 +15 34        (+|-) D+ | D+
+
+                                (+|-)? D+
+
+FloatLit = +4.5    -3.14    4.5     123.5678645     (+|-)? D* . D+
+
+
+Our goal: a(bc)*d
+
+input: string
+output: Yes/No accept/reject decision
+
+We are going to use $ to mark end of string rather than dealing with end-of-string & whitespace
+
+ex) abcd$
+
+1. Hardcode 
+
+![hardcode](/minglab/assets/HardcodeDFA.png)
+
+{% highlight c%}
+while(good == 1)
+{
+    switch(s)
+    {
+        case 1:
+            if (c == 'a') t = 2;
+            else    {t = -1; good = 0;}
+            break;
+        case 2:
+            if(c == 'b') t = 3;
+            else if(c == 'd')   t= 4;
+            else  {t = -1; good = 0;}
+            break;
+        case 3:
+            if(c == 'c') t =2;
+            else    {t = -1; good =0;}
+            break;
+        case 4:
+            if(c == '$') {good = 2;}
+            else {good = 0;}
+            break;
+    }
+}
+{% endhighlight %}
+
+2. Use a table drive DFA-like algorithm
+
+![TableAutomata](/minglab/assets/TableAutomata.png)
+
+{% highlight c %}
+//set-up
+tab[1][1] = 2;
+tab[2][2] = 3;
+tab[2][4] = 4;
+tab[3][3] = 2;
+tab[4][5] = 100;
+
+scanf("%s", in);
+
+cs = 1;
+c = in[0];
+loc = 1;
+
+while (cs > 0 && cs < 100)
+{
+    switch(c)
+    {
+        case 'a' : c = 1; break;
+        case 'b' : c = 2; break;
+        case 'c' : c = 3; break;
+        case 'd' : c = 4; break;
+        case '$' : c = 5; break;
+    }
+}
+{% endhighlight %}
+
+{% highlight lex %}
+a(bc)*d {printf("Accept (%s) \n", yytext);}
+xy {printf("Got (%s) \n", yytext);}
+.+ {printf("Reject (%s)\n",yytext);}
+{% endhighlight %}
+
+lex inlex.l
+
+gcc lex.yy.c
+
+gcc lex.yy.c -ll
+
+./a.out
+
+3. Lex / Flex --- Scanner generator
+- In:: Regular Expressions
+- Out:: Program to implement scanner (automata)
+
+Formal Method + Implementation ==> Hybrid notation
+
+Write the specification
+
+Run spec through Lex
+
+Compile generated generic program + data tables
+
+Run the scanner
+
+Spec.l -> Lex -> Lex.yy.c -> gcc -> Scanner
+
