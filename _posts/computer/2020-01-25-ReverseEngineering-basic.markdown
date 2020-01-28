@@ -83,3 +83,45 @@ The beginning of file looks like
         - they adjust the stack -> you can successfully return to the original value
     - What's the stack?
 
+# Reviewing terminology 
+
+1. What security protection does DEP/NX offer?
+    - Data Execution Prevention / Non Execution.
+    - 
+2. What security protection does ASLR offer?
+    - Adress Space Layout Randomization
+    - Randomly loads program in the memory
+    - 
+3. What are stack canaries and what security protection do they offer
+    - secret values put on stack
+    - 0xDEADBEEF (Stack canaries)
+    - If it does not match with stack when you start program
+    - it makes crash.
+4. What is SEH and what does it do?
+    - Structure exception handling
+    - Mostly windows thing. Structure contains exception 
+    - Will go look up SEH if there is no user entry, exception handler execute that.
+    - 
+5. What is SUID and what does it do?
+    - Set User I D
+    - Mostly Unix/Linux term
+    - Let you attach permission to binary
+    - But not actually give user root permision
+    - Kind of bad idea.
+6. What does BOF stand for? What are 2 common types of BOFs? 
+    - Buffer overflow
+    - Stack and heap
+7. What is ROP?
+    - Return Oriented Programming
+    - Searching for gadget somehow manipulate memory or register and returns
+    - Method of programming
+8. What are ROP Gadgets?
+    - Assembly instructions
+9. Briefly describe what shellcode is
+    - Part of the program that does the work
+    - Functionality what your exploit does
+10. What is an egg in computer security terms? Why would you use an egg?
+    - Unique Identifier to mark memory somehow
+    - You will find BOF, but it only contains 50 bytes of memory. What would i do is replace it to egg.
+11. What is an egg hunter?
+    - Very small chunk of code to find egg in memory.
