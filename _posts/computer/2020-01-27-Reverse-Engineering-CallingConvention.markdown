@@ -75,3 +75,36 @@ permalink: /:categories/:title.html
 - Callees must preserve r4-r11 and SP.
     - Callee MUST save LR to stack before calling other function
 
+{% highlight asm %}
+section .text
+    global _start
+
+_start:
+    call _main
+    mov ebx, eax ; exit system call
+    mov eax, 0x1 ; exit system call
+    int 0x80     ; execute system call
+
+_main:
+    push ebp
+    mov ebp, esp
+    sub esp, 0x10 ; moving esp value further down the stack
+; Here it is prologue of our program
+; now we can do our program 'stuff'
+; And we need to create epilogue
+    add esp, 0x10 ; give back that stack to the system
+    pop ebp 
+    ret
+
+; peda
+; Python Exploit Development Assistance for GDB
+; disas _main
+; br *0x0804806e
+; br _main
+; del br 2
+; info br
+; r
+; display/20xw $esp
+; si 
+
+{% endhighlight %}
