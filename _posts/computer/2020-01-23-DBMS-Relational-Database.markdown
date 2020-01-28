@@ -100,3 +100,50 @@ g. Using the informal relational command language described in this chapter, wri
     - select gross weight from ship where Join the cruise and ship using cruise number = 39482
 8. List the home address of every passenger on cruise number 17543.
     - select all home address from passenger where Join the cruise and passenger and using cruise number = 17543
+
+
+# Additional Concept
+
+1. One to many unary relationship
+    - SalesManager to SalesPeople
+
+2. Many to many unary relationship
+    - 
+
+3. Ternary relationship
+    - Three different entities
+    - It is not equal to three many to many relationship
+
+# Data Operation
+
+1. Referential Integrity
+    - Record Deletion
+    - Insertion -> Problem when you insert many side
+    - Update -> Problem when you change foreign key
+2. Three delete rule
+    - Restrict
+        - If you want to delete one side (because foreign key is alive)
+    - Cascade
+        - If you delete one record, related records will be deleted (foreign key)
+    - Set to null
+        - If you delete one record, foreign key will be set to null
+
+**Exercise**
+
+![DBMSCH6_1](/minglab/assets/DBMSCH6_1.png)
+
+![DBMSCH6_2](/minglab/assets/DBMSCH6_2.png)
+
+![DBMSCH6_3](/minglab/assets/DBMSCH6_3.png)
+
+![DBMSCH6_4](/minglab/assets/DBMSCH6_4.png)
+
+
+1. The delete rule between the SHIP and CRUISE relations is restrict and an attempt is made to delete the record for ship nummber 012 in the SHIP relation?
+    - Since there are two records(27045,28532) that including Ship number 012 as foreign key, It is restricted to delete the record for ship number 012 in the SHIP relation.
+
+2. The delete rule between the SHIP and CRUISE relations is restrict and an attempt is made to delete the record for ship number 005 in the SHIP relation?
+    - Since there is no record that includes Ship nummber 005 as foreign key, It is okay to delete the record for ship number 005 in the SHIP relation.
+
+3. The delete rule between the SHIP and CRUISE relations is cascade and an attempt is made to delete the record for ship number 012 in the SHIP relation?
+    - Since there are two records(27045,28532) that including Ship number 012 as foreign key, Those records are will be deleted as well if you delete the record for ship number 012 in the SHIP relation.
