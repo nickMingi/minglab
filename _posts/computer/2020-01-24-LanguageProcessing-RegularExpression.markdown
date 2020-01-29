@@ -154,3 +154,41 @@ Run the scanner
 
 Spec.l -> Lex -> Lex.yy.c -> gcc -> Scanner
 
+# Exercise
+
+nano file.l (lex file)
+
+definitions & char sets
+
+%%
+
+RE
+
+%%
+
+additional code
+
+lex file.l  (generates lex.yy.c)
+
+gcc lex.yy.c -ll (generates a.out scanner)
+
+./a.out < myinfile
+
+Reminders:
+- Lex rules -- modified RE syntax
+- Lex rules -- order matters, matches top to bottom
+
+           -- tries to match longest sequence
+
+- unmatched characters are echoed by default
+- Lex action -- when a rule is matches, code fires
+- Eventually
+- (0|1|2|3|4|5|6|7|8|9)(0|1|2|3|4|5|6|7|8|9)*
+- (0|1|2|3|4|5|6|7|8|9)+
+- [0-9]+
+- Above three are all same
+- . allows everything except '\n'
+- [a-zA-Z] indicates all alphabetic letters
+- [akrz] means only those four characters allowed
+- [a-z|A-Z] menas only one character from those letters
+- Ordering rule is important If you place .+ at first rule, everything will be catched
