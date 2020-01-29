@@ -162,4 +162,46 @@ The odds against drawing a jack is 12:1
 
 1. Scroll down to read rules first
 2. Play the game
+3. What you observed?
+    - many ways to bet
+4. True odds and house odds
+    - ex) if you bet on # 32 
+    - honest calculation = true odds
+    - 1-P(E) = 1-1/38 / 1/38 = 37:1 (odds against if you bet $1, get $37)
+    - but house odds: 35:1 (odds against if you bet $1, get $35)
+    - so house odds are smalling down a little
+5. Let E = event that a spin of the wheel results in a 10,11,13,or 14. What is the probability of E and the odds for and against E.
+    - P(E) = 4/38 :: 2/19
+    - Odds for E = P(E)/1-P(E) :: 2/19 / 1-2/19 :: 2/17 :: 2:17
+    - If odds for E = a/b, then P(E) = a/a+b implies odds for are 2:17
+    - Odds against E: 17:2
 
+# Compund Probabilities: The rules of the game
+
+1. When to disjoint and when it is independent
+2. Let E and F be events
+3. The event not E is when E does not occur(complement of E)
+4. The event E or(inclusive or) F occurs when at least one of E and F occur.
+5. The additive rule: If E and F are events, then P(EorF)= P(E)+P(F)-P(EandF)
+6. If E and F are disjoint(they can't occur simultaneously) events, then P(EorF) = P(E)+P(F)
+7. ex) a box contains 3 red tickets, 2 blue tickets, and 1 yellow ticket
+    - If one ticket is drawn randomly from the box, what is the probability it is blue or yellow?
+    - It is disjoint event (since a ticket can not be both yellow and blue)
+    - P(blue or yellow) = P(blue) + P(yellow) = 2/6 + 1/6 = 1/2
+8. Continue
+    - If two tickets are drawn at random with replacement from the box, what is the probability that the first ticket is blue or the second ticket is yellow?
+    - Not disjoint
+    - P(1st blue or 2nd yellow) = P(1st blue)+P(2nd yellow)-P(1st blue and 2nd yellow)
+    - Draw table first 
+    - 2/6 + 1/6 - (2/36) = 1/2 - 1/18 = 8/18 = 44% 
+
+# Conditional Probability
+
+1. The Probability of an event E given that we know that event F has occured is called the conditional probability of E given F We denote this by P(E|F)
+2. The multiplication rule: Given events E and F, P(E and F) = P(E)P(F|E) and P(F)P(E|F)
+3. If E and F are independent(occurence of one event does not affect the occurence of the other) events, then P(E|F) = P(E) and P(F|E) = P(F)
+4. So P(E and F) = P(E)P(F)
+    - Equals P(E) = P(E and F)/P(F)
+    - Equals P(F) = P(E and F)/P(E)
+5. ex) A box contains 75 tickets 30 red, 25 blue, 15 yellow, and 5 pink.
+    - If 3 tickets are drawn from the box at random with replacement what is the probability that all 3 are red?
