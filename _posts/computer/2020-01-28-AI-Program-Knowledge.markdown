@@ -109,3 +109,27 @@ class Square(Rhombus, Rectangle):
 - super(Rectangle, self).__init__(side, side)
 - super(Rhombus, self).__init__(side, side)
 
+8. When overwriting an existing file, what is a reason to first write to a temporary named file, and then use the system to rename it to the destination?
+- To guarantee atomicity of the data written to the destination
+- To save disk space
+- To increase write performance
+- To prevent permissions errors in opening the destination file
+
+9. Given an array of hash sets, the task is to find the intersection of all the sets. Which implementation is both correct and the fastest asymptotically?
+
+{% highlight python %}
+fun <T> intersects(vararg sets: Set<T>): Set<T>{
+    ...
+}
+{% endhighlight %}
+- return sets.fold(sets.minBy({it.size})?:setOf()){r,s->r.intersect(s)}
+- return sets.fold(setOf()){r,s->r.intersect(s)}
+- return sets.fold(sets[0]){r,s->r.intersect(s)}
+- return sets.reduce{r,s->r.intersect(s)}
+
+10. Which of the following best describes the output of an "embedding"?
+- A sparse,high-dimensional vector
+- A basis vector
+- A one-hot vector
+- A dense,low-dimensional vector
+

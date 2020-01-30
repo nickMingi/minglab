@@ -41,4 +41,45 @@ permalink: /:categories/:title.html
     - E[X-E[X]^2]
     - E[X-E[X]]
 
-6. 
+6. Which if the following is an application of singular value decomposition?
+    - Inverting a singular matrix
+    - Converting a matrix into Jordan form
+    - Finding a low-rank approximation of a matrix
+    - Solving an overdetermined system of linear equations
+
+7. Given the task of finding words which share a common prefix with a given word, which data structure would have the optimal expected asymptotic performance?
+    - binary tree
+    - sorted array
+    - hash set
+    - trie
+
+8. Which of the following approaches will help reduce overfitting?
+    - Switch to a model with more parameters
+    - Use a smaller training set
+    - Reduce the learning rate during gradient descent
+    - Add a regularization term to the cost function
+
+9. Which of the following approaches would give the best tradeoff between speed and accuracy when calculating the product of many probabilities?
+    - Use the log-sum-exp trick
+    - Use the Fourier transform trick
+    - Use a single-precision floating point type(float or float32)
+    - Use an arbitrary precision decimal type(BigDecimal in Java)
+
+10. Which of the following random variables cannot reasonably be considered "llD"?
+    - Repeatedly drawing,without replacement,from a deck of cards
+    - Repeatedly flipping a fair coin
+    - Repeatedly choosing a direction to move during an unbiased random walk
+    - Repeatedly flipping a biased coin that comes up heads with probability .7
+
+11. In a random forest classifier, which of the following choices involves randomness?
+    - Choosing which trees to discard during inference
+    - Choosing which loss function to use
+    - Choosing which branch to follow at a given node
+    - Choosing which subset of features to use for a given tree
+
+12. In general, how does the introduction of "regularization" affect a cost function?
+    - It doesn't affect the cost function at all
+    - It ensures that the cost function is convex
+    - It penalizes large parameter values
+    - It adds a term to account for Gaussian noise
+
