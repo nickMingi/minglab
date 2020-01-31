@@ -147,3 +147,31 @@ g. Using the informal relational command language described in this chapter, wri
 
 3. The delete rule between the SHIP and CRUISE relations is cascade and an attempt is made to delete the record for ship number 012 in the SHIP relation?
     - Since there are two records(27045,28532) that including Ship number 012 as foreign key, Those records are will be deleted as well if you delete the record for ship number 012 in the SHIP relation.
+
+# Logical Database Design
+
+1. If it is binary one to many, forien key has to be in many side
+2. If it is binary many to many, you need relationship in the middle including both foreign keys
+3. If it is binary one to one, create foreign key
+4. Unary one to one
+5. Unary one to many
+6. Unary many to many
+7. Ternary = creating center relationship All associative entities 
+
+# Data normalization process
+
+1. Methodology for organizing attributes into tables so that redundancy among the nonkey attributes is eliminated
+2. Input
+    - All the attributes that must be incorporated into the database
+    - A list of all the defining associations between the attributes
+3. Functional dependence
+    - Salesperson number is determinant 
+    - Salesperson name is dependent on SN
+4. First Normal Form(1NF)
+    - No multi valued attributes
+    - Every attribute value is atomic
+5. Second Normal Form(2NF)
+    - Every non-key attribute is fully functionally dependent on the ENTIRE primary key
+6. Third Normal Form(3NF)
+    - 2NF plus no transitive dependencies
+    - (Functional dependencies on non-primary-key attributes)

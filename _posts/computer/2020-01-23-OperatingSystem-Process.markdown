@@ -6,6 +6,9 @@ author: "mingi hong"
 categories: Computer OperatingSystem
 permalink: /:categories/:title.html
 ---
+# Purpose of OS
+
+1. participate
 
 ![MIX_diagram](/minglab/assets/MIX_diagram.png)
 
@@ -219,6 +222,38 @@ Note: Multiprocessor core system may have issues with shared memory because of '
 
 # Synchronization
 - Send - msg passing
-	- Blocking(synchronizing) send
+	- Blocking(synchronizing) send(sync)
 		- The sender blocks until the message is recieved -> mailbox or process
+	- Non Blocking (async)
+- Receive()
+	- Blocking
+	- Non Blocking
+- If both are blocking "Rendevous"
+- Buffering : talk about implementation
+	- Zero capacity: Length is zero
+	- Bounded capacity: Finite Length N
+	- Unbounded capacity: (sender never blocks)
+
+# Socket
+
+1. Should know what Remote procedure call
+	- we have to know the socket that i send it to
+	- Problem is many clients want to access server it is dynamic
+2. Match maker
+	- Usually in the server side
+
+![matchmaker1](/minglab/assets/matchmaker1.png)
+![matchmaker2](/minglab/assets/matchmaker2.png)
+
+
+# Pipe IPC
+
+1. One of the first IPC mechanisms in early UNIX
+2. Pipe 
+	- Unidirectional?
+	- Half duplex or full duplex?
+	- Is it local network?
+	- One way(Ordinary pipe)
+	- Named pipe (persistent so we can use it again don't need parent and child relationship
+
 	
