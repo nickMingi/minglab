@@ -192,4 +192,13 @@ Reminders:
 - [akrz] means only those four characters allowed
 - [a-z|A-Z] menas only one character from those letters
 - Ordering rule is important If you place .+ at first rule, everything will be catched
-- 
+- If you want to use dot(.), use escape character(\) so it is like (\.)
+- " "" "+     means morethan 2 spaces
+- DT: DataType - Int | Char
+- ID: Identifier - starts & ends with letter
+- N : Numeric Literal - positive number
+- C : Character literal 'k'
+- "'"."'" means covered by small quote(')
+- [a-zA-Z](([a-zA-Z0-9])*[a-zA-Z])? means starts & ends with letter
+    - [a-zA-Z]([a-zA-Z0-9])* same with this?
+- Lex is case sensitive
