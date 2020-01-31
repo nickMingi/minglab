@@ -192,3 +192,4 @@ Reminders:
 - [akrz] means only those four characters allowed
 - [a-z|A-Z] menas only one character from those letters
 - Ordering rule is important If you place .+ at first rule, everything will be catched
+- 
