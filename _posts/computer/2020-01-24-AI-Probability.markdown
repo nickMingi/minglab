@@ -205,3 +205,59 @@ The odds against drawing a jack is 12:1
     - Equals P(F) = P(E and F)/P(E)
 5. ex) A box contains 75 tickets 30 red, 25 blue, 15 yellow, and 5 pink.
     - If 3 tickets are drawn from the box at random with replacement what is the probability that all 3 are red?
+    - P(1st red and 2nd red and 3rd red)
+    - Events are independent because there is a replacement
+    - P(30/75 * 30/75 * 30/75)
+    - P(2/5 * 2/5 * 2/5)
+    - 8/125 = 6.4%
+    - If 3 tickets are drawn from the bo at random without replacement, what is the probability that all 3 are red?
+    - P(1st red and 2nd red and 3rd red)
+    - Events are dependent because there are no replacement
+    - P(1st and 2nd red)*P(3rd red|(1st red and 2nd red))
+    - P(1st red)*P(2nd red|1st red)*P(3rd red|1st red and 2nd red)
+    - (30/75)(29/74)(28/73) = 6.01%
+
+
+
+## Real Case (2019 Novel Corona Virus)
+
+![2019novelCoronavirus](/minglab/assets/2019novelCoronavirus.png)
+
+# Facts
+
+1. If you have chronical medical illness, probability of getting infected is 51%
+    - 만약 만성질환이 있다면, 감염될 확률은 51%이다.
+2. If you are male, probability of getting infected is 2 times more than female(32% probability of getting infection)
+    - 만약 남성이라면, 감염될 확률은 여성보다 2배 높다.
+3. If you are younger than 39 years old, probability of getting infected is 10%
+    - 39세 이하라면, 감염될 확률은 10%이다.
+4. If you have no symptom, probability of getting infected is 10%
+    - 증상이 없다면, 감염될 확률은 10%이다.
+
+# Questions
+
+1. If you have chronical medical illness and 39 years old male.
+    - 만약 만성질환이 있는 39세 남성이라면?
+    - P(medical illness & 39y & male)
+    - P(A and B) equals P(A)P(B|A) only if A and B are dependent.
+    - Here we have only the fact as independent so P(A) * P(B)
+    - P(medical illness) * P(39y) * P(male)
+    - 51/100 * 10/100 * 64/100 
+    - 3.26%
+2. If you have chronical medical illness and 50 years old female(Alpha). And you met person from wuhan who has no symptom 50y male(Beta).
+    - 만성질환이 있는 50대 여성인데(알파), 증상이 없는 우한에서 온 남자(베타)를 만났다면?
+    - P(medical illness & 50Y & female) met P(no symptom & 50 & male)
+    - This time, meeting people is dependant relationship.
+    - Let's say dependant parameter as meeting time
+    - Spend time 30m or less (30%)
+    - Spend time 31m to 60m (66%)
+    - Spend time 61m ~ (88%)
+    - Alpha P(medical illness) * P(50y) * P(female)
+    - 51/100 * 90/100 * 32/100
+    - Beta  P(no symptom) * P(male)
+    - 10/100 * 64/100
+    - P(14.69%) and P(6.4%)
+    - P(14.69%)P(6.4%|14.69%|66%) [60minutes]
+    - 0.09%
+    - P(14.69%)P(6.4%|14.69%|88%) [90minutes]
+    - 0.12%
