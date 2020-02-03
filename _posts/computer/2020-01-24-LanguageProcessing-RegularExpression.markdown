@@ -7,7 +7,75 @@ categories: Computer LanguageProcessing
 permalink: /:categories/:title.html
 ---
 
+## Compiler
+
+- gcc is compiler. series of components
+- compiler is simply a program
+- can be hand-coded
+- compilers/translators are built mechanically from grammars
+- specification is the key
+    - grammar: set of rules specifying a language: formal purpose of a compiler
+- language translation
+- source language to target language images
+    -source and target programs should be "equivalent"
+- often high level language to machine language
+    - any combinations of languages is possible
+- think of it also as a function/mapping between the languages
+
+source -> compiler -> target
+
+c      -> gcc      -> assembly/ml
+
+- scanner
+    - group characters into tokens
+        - lexical analysis
+        - determine meaningful chunks
+            - integer-literal
+            - float-literal
+            - string
+            - identifier
+            - relational-operator
+- parser
+    - group tokens into constructs
+- codegenerator
+    - translate source constructs to target
+
 ## Regular Expression
+
+. concatenation [ implicit by writing two symbols next to each other ]
+| choice
+* kleene star; repetition [ 0 or more occurrences of ]
+() parenthesis for grouping / precedence
+
+RE: a(b|c) RE: a*
+
+L :{ab,bc} L :{empty,a,aa,aaa,aaaa,aaaaa,...}
+
+RE: a(b|c)* L:{a,ab,ac,abbc,abccc,...}
+
+RE: a(b*|c*) L:{a,ac,accccc,ab,abbb,abb,...}
+
+RE: a*(b|c) L:{bcc,ab,aaaab,aaac,...}
+
+Extended RE:
+
++ one or more   -> a+ = aa*
+? option; 0 or 1   -> aab? = aa | aab
+
+RE: a+  L:{a,aa,aaa,aaaa,...} NO EMPTY
+
+RE produces a set of strings
+
+The language specified by a regular expression is a regular language
+
+RE generates all elements of a RL
+
+RL is specified by a RE
+
+RL is recognized by a finite state automata
+
+Deterministic finite state automata :: DFA
+- deterministic: in every situation, there is no arbitrary choice. If there is a way, only one way finite: yep, finite number of states
 
 L is a regular language if (a) or (b)
 - (a) L can be described by a RE, r
@@ -202,3 +270,144 @@ Reminders:
 - [a-zA-Z](([a-zA-Z0-9])*[a-zA-Z])? means starts & ends with letter
     - [a-zA-Z]([a-zA-Z0-9])* same with this?
 - Lex is case sensitive
+- learn the formal method
+- describe a language; generate the elements
+- develop a specification
+- generate a tool from the spec
+
+# topics
+1. context free grammar(CFG)
+2. context free language(CFL)
+3. derivation
+    - left-most(LMD)
+    - right-most(RMD)
+4. parse tree (PT)
+5. ambiguity
+6. abstract syntax tree (AST)
+7. regular grammar (RG)
+8. expression example we'll use all term
+
+YACC - building tools from specification
+
+# Context-Free Grammar (CFG)
+- defines a context-free language (CFL)
+    - just like a RE defines a RL
+
+First some examples; then a more formal coverage
+
+This always backfires when I try to explain or describe
+    something to motivate the new topic. But I keep trying
+
+Person: Bob, Sue, Lisa
+
+Food: noodles, carrots, cookies
+
+What are the option for something of this form??
+- person likes to eat food
+- Bob likes to eat noodles
+- It is same as P(person) likes to eat F(food)
+
+We do have to define where to start, in this case, A
+
+- A = a
+- A = a B a
+- B = b
+- B = c 
+
+- S = g R T
+- R = f
+- R = g
+- T = m T
+- T = m
+
+Language: { gfm, ggm, gfmm, ggm, ...}
+
+![CFL](/minglab/assets/CFL.png)
+
+# Grammar conventions(for class)
+- must have a unique start symbol
+- we'll distinguish
+    - terminals: lowercase and symbols
+    - nonterminals: uppercase
+    - start: the first 
+- Derivation
+    - series of rewritings
+        - start at START
+            - any single nonterminal NT symbol
+
+# Exersise
+
+a+
+
+- S = a
+- S = a S
+
+Derivation: aaa
+
+s = a S
+  = a a S
+  = a a a
+
+- S = S a
+- S = a
+
+Derivation: aaa
+
+S = S a
+  = S a a
+  = a a a
+
+a+b+
+
+- S = A B
+- A = a
+- A = a S
+- B = b
+- B = b S
+
+(0|1)+
+
+- S = A
+- A = 0
+- A = 1
+- A = 0 A
+- A = 1 A
+
+- S = 0
+- S = 1
+- S = 0 S
+- S = 1 S
+
+- S = 0
+- S = 1
+- S = S S
+
+- S = S 0
+- S = S 1
+- S = 0
+- S = 1
+
+Derivation : 1 1 0 1(LMD)
+- S = SS
+- S = 1S
+- S = 1SS
+- S = 11S
+- S = 11SS
+- S = 110S
+- S = 1101
+
+Ambiguous
+
+Valid C identifier Letters: (a or b) Digits(7 or 8)
+
+L(L | D)*
+
+ID = A B
+ID = A
+A = a
+A = b
+A = A A
+B = 7
+B = 8
+B = B B
+B = A

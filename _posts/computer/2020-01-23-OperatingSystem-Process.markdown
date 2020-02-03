@@ -6,6 +6,90 @@ author: "mingi hong"
 categories: Computer OperatingSystem
 permalink: /:categories/:title.html
 ---
+
+## Chapter 2
+
+operating systems provide an environment for execution of programs and services to programs and users
+
+one set of operating-system services provides functions that are helpful to the user:
+- User Interface: almost all operating systems have a user interface varies between CLI(command-line), GUI(Graphics user interface), Batch
+- Program execution: The system must be able to load a program into memory and to run that program, end execution, either normally or abnormally(indicating error)
+- I/O operation: a running program may require I/O, which may involve a file or an I/O device
+
+OS service provides functions that are helpful to user
+- File-system manipulation
+- Communications
+- Error detection
+
+Efficient operation
+- Resource allocation
+- Accounting
+- Protection and security
+	- protection
+	- security
+
+# CLI
+1. sometimes implemented in kernel, sometimes by systems program
+2. sometimes multiple flavors implemented - shells
+3. primarily fetches a command from user and executes it
+4. sometimes commands built-in sometimes just names of programs
+	- if the latter, adding new features doesn't require shell modification
+
+# GUI
+1. user-friendly desktop metaphor interface
+	- usually mouse, keyboard, and monitor
+	- icons represent files, programs, actions, etc
+	- various mouse buttons over objects in the interface cause various actions(provide information, options, execute function, open directory(known as a folder))
+	- invented at xerox parc
+2. many systems now include both CLI and GUI interfaces
+	- microsoft windows is GUI with CLI command shell
+	- apple mac os x is "aqua" gui interface with unix kernel underneath and shells available
+	- unix and linux have CLI with optional GUI interfaces(CDE,KDE,GNOME)
+
+# Touchscreen interfaces
+1. mouse not possible or not desired
+2. actions and selection based on
+
+# System calls
+1. Programming interface to the services provided by the OS
+2. Typically written in a high-level language(C or C++)
+3. Mostly accessed by program via a high-level application Programming interface(API) rather than direct system call use
+4. Three most common APIs are Win32 API for Windows, POSIX API for POSIX-based systems(including virtually all versions of UNIX, Linux and Mac OS X), and Java API for the Java virtual machine(JVM)
+
+- note that the system-call names used throughout this text are generic
+
+# System call parameter passing
+1. often, more information is required than simply identity of desired system call
+	- Exact type and amount of information vary according to OS and call
+2. Three general methods used to pass parameters to the OS
+	- simplest: pass the parameters in registers
+	- parameters stored in a block, or table, in memory, and address of block passed as a parameter in a register
+	- parameters placed, or pushed, onto the stack by the program and popped off the stack by the operating system
+	- block and stack methods do not limit the number or length of parameters being passed
+
+#Types of system calls 
+- File management
+- Device management
+- Information maintenance
+- Communications
+- Protection
+
+Processes: a program in execution
+
+Heuristic Algorithm(Time constraint)
+
+Batch: job
+
+Concurrent: task
+
+Process State:
+
+Ready - running - waiting -> this cycle called MIX
+
+The degree of multiprogramming(The number of process in the MIX)
+
+Controlling the degree of Programming CPU utilization
+
 # Purpose of OS
 
 1. participate

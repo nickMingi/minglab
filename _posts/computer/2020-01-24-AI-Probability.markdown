@@ -257,7 +257,40 @@ The odds against drawing a jack is 12:1
     - Beta  P(no symptom) * P(male)
     - 10/100 * 64/100
     - P(14.69%) and P(6.4%)
-    - P(14.69%)P(6.4%|14.69%|66%) [60minutes]
-    - 0.09%
-    - P(14.69%)P(6.4%|14.69%|88%) [90minutes]
-    - 0.12%
+    - P(14.69%)P(6.4%|66%) [60minutes]
+    - 0.62%
+    - P(14.69%)P(6.4%|88%) [90minutes]
+    - 0.83%
+
+# Mathemathical Expectation and its Applications
+
+Suppose a friend offers you a friendly bet. If you flip a coin and get heads, they will pay you $1, and if the coin comes up tails, you have to pay them $1. Is this a fair bet?
+
+over time, 1/2 the time you win and 1/2 the time you lose.
+
+We could compute the average winnings (expected value)
+
+(1/2)($1) + (1/2)(-$1) = $0 
+
+Average of winning is nothing, but safe game.
+
+Ex) game: tosses to toss a heads
+
+This may take a while so let's restrict down to three tosses.
+
+Sample space for this game: {H,TH,TTH,TTT}
+
+Payment table: H|TH|TTH|TTT
+               $1|$2|$4|$0
+
+What is a reasonable price to play this game?
+Probabilities of our outcomes from sample space:
+
+Outcome     | H  | TH | TTH | TTT 
+Probability | 1/2| 1/4| 1/8 | 1/8
+
+Let's calculate the average expected earnings:
+
+(1/2)*$1 + (1/4)*$2 + (1/8)*$4 + (1/8)*$0 = $1.5
+
+So it appears we would be willing to pay $1.50 to play
