@@ -38,3 +38,17 @@ Total of 100%
 - 25
 ***(1.818%)
 - 22
+
+# Condition
+1. One roll is ten tries
+2. At least one card is above ****(Servant or craft)
+3. Other nine tries are equal probabilities
+
+# How do we calculate?
+1. We have two conditions
+    - Guaranteed card
+    - Equal probabilities
+2. Calculate each conditions
+
+# Exercise
+1. dd

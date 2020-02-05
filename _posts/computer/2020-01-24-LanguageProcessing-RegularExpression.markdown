@@ -289,9 +289,19 @@ Reminders:
 
 YACC - building tools from specification
 
+Parset:
+ - group chunks together to form constructs
+
+char --> Scanner --> tokens --> Parser --> constructs
+
 # Context-Free Grammar (CFG)
 - defines a context-free language (CFL)
     - just like a RE defines a RL
+- Will be used to define the structure of constructs
+    - Like RE was used for the scanner phase
+- Series of rewriting rules
+- LHS: single symbol
+- RHS: one or more symbols
 
 First some examples; then a more formal coverage
 
@@ -330,10 +340,12 @@ Language: { gfm, ggm, gfmm, ggm, ...}
     - terminals: lowercase and symbols
     - nonterminals: uppercase
     - start: the first 
-- Derivation
-    - series of rewritings
+- Derivation: from the start symbol,
+    - series of rewritings steps to arrive at a word(terminal string)
         - start at START
             - any single nonterminal NT symbol
+- Terminal: lowercase
+- Nonterminal: uppercase
 
 # Exersise
 
@@ -411,3 +423,77 @@ B = 7
 B = 8
 B = B B
 B = A
+
+# Exercise2
+
+A sample
+
+- A = a B C d
+- B = Bb
+- B = x
+- C = gh
+
+Context Free Grammar G:
+- NT = {A,B,C} T = {a,b,d,g,h,x} S = A
+- Rules: production Rules: Rewriting rules:
+
+{
+    A = a B C d
+    B = Bb
+    B = x
+    C = gh
+}
+
+L(G) is a context free language
+- elements are all strings containing only terminal symbols that can be produced by the grammar
+
+BNF Backus-Naur Form
+
+Grammar rules: LHS non-terminal RHS combination of T & NT
+
+Derivation: starting from the start symbol
+
+- String with even number of a's, only a's, at least 1 a
+    - (aa)+
+    - CFG: S = A
+    -      A = aa
+    -      A = aaA
+    - Derivation: S = A
+    -             S = aaA
+    -             S = aaaa
+
+- IDList 
+    - IDL = id
+    - IDL = id, IDL
+    - or
+    - IDL = id
+    - IDL = IDL, id
+
+- Positive binary integers, no leading 0's
+    - ex) 101; 111000;
+    - RE : 1(1|0)*
+    - CFG: S = 1A
+    -      S = 1
+    -      A = 1
+    -      A = 0
+    -      A = AA
+
+- Positive number of a's followed by same number of b's
+    - RE : a+b+
+    - CFG: S = AB
+    -      A = a
+    -      A = aA
+    -      B = b
+    -      B = bB
+
+- Positive number of a's followed by b's (# a's is bigger than b's )
+    - ex) aaaabb
+    - RE : a(a|b)+b -> I don't know
+    - CFG: S = aaSb
+           S = aSb
+           S = aaSb
+           S = ab
+    - CFG: S = aSb
+           S = aAb
+           A = a
+           A = aA
