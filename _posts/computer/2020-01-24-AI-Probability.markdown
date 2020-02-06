@@ -294,3 +294,21 @@ Let's calculate the average expected earnings:
 (1/2)*$1 + (1/4)*$2 + (1/8)*$4 + (1/8)*$0 = $1.5
 
 So it appears we would be willing to pay $1.50 to play
+
+# Math expectation and its applications
+
+- If values W1,W2,...,Wn can be obtained from an experiment with respective probabilities P1,P2,...,Pn, then the expected value of the experiment is given by
+
+Expected value = PiW1+PaW2+...+PnWn
+
+- Find the expected value for the sum when roll a pair of dice
+    - w1,w2,...,w11 = possible sums that occur(2,3,4,...,12)
+    - p1,p2,...,p11 = probability that each occurs respectively
+- Expected value = (1/36)*2+(2/36)*3+(3/36)*4+(4/36)*5+(5/36)*6+(6/36)*7+(5/36)*8+(4/36)*9+(3/36)*10+(2/36)*11+(1/36)*12
+    - 7: The expected outcome for the sum when rolling 2 dice is 7
+    
+EX) For the "first five" wager in Roullette, we need either 0,00,1,2, or 3 to come up. With a payout of 6:1, what are the expected winnings?
+
+- Expected winnings = Succeed[(5/38)($6)]+Lose[(33/38)($1)] :: -$0.0789
+- The house has about a 7.89% advantage
+
