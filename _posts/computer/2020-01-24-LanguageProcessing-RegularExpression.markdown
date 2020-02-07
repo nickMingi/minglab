@@ -451,7 +451,10 @@ BNF Backus-Naur Form
 
 Grammar rules: LHS non-terminal RHS combination of T & NT
 
-Derivation: starting from the start symbol
+Derivation: starting from the start symbol, apply a valid sequence of rewriting operations to produce the desired string of terminal symbols
+
+- Left-most [given choice, rewrite the left NT first]
+- Right-most[given choice, rewrite the right NT first]
 
 - String with even number of a's, only a's, at least 1 a
     - (aa)+
@@ -497,3 +500,56 @@ Derivation: starting from the start symbol
            S = aAb
            A = a
            A = aA
+
+Consider these 3 grammars
+- understand
+- RMD for aaaa
+- PT for aaaa
+
+A = A A
+A = a
+
+![fouraderivation](/minglab/assets/fouraderivation.png)
+
+this is wrong
+
+A = A A
+A = A A A 
+A = A A a
+A = A a a
+A = A A a a
+A = A a a a
+A = a a a a
+
+![RMDfoura](/minglab/assets/RMDfoura.png)
+
+this is correct
+
+Grammar:
+- Expr = Expr + Expr
+- Expr = Expr * Expr
+- Expr = id
+- Expr = num
+
+Derive & draw parse tree
+- id + id + id
+
+![IDexpression](/minglab/assets/IDexpression.png)
+
+But this is ambiguous grammar 
+
+Another Grammar:
+- E = E + T
+- E = T
+- T = T * F
+- T = F
+- F = id
+- F = num
+
+Derive & draw parse tree
+- id + id + id
+- id + id * id
+- id * id + id
+
+![eID](/minglab/assets/EPlusID.png)
+

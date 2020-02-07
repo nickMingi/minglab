@@ -226,18 +226,18 @@ The odds against drawing a jack is 12:1
 # Facts
 
 1. If you have chronical medical illness, probability of getting infected is 51%
-    - ë§Œì•½ ë§Œì„±ì§ˆí™˜ì´ ìˆë‹¤ë©´, ê°ì—¼ë  í™•ë¥ ì€ 51%ì´ë‹¤.
+    - ë§Œì•½ ë§Œì„±ì§ˆí™˜?´ ?ˆ?‹¤ë©?, ê°ì—¼?  ?™•ë¥ ì?? 51%?´?‹¤.
 2. If you are male, probability of getting infected is 2 times more than female(32% probability of getting infection)
-    - ë§Œì•½ ë‚¨ì„±ì´ë¼ë©´, ê°ì—¼ë  í™•ë¥ ì€ ì—¬ì„±ë³´ë‹¤ 2ë°° ë†’ë‹¤.
+    - ë§Œì•½ ?‚¨?„±?´?¼ë©?, ê°ì—¼?  ?™•ë¥ ì?? ?—¬?„±ë³´ë‹¤ 2ë°? ?†’?‹¤.
 3. If you are younger than 39 years old, probability of getting infected is 10%
-    - 39ì„¸ ì´í•˜ë¼ë©´, ê°ì—¼ë  í™•ë¥ ì€ 10%ì´ë‹¤.
+    - 39?„¸ ?´?•˜?¼ë©?, ê°ì—¼?  ?™•ë¥ ì?? 10%?´?‹¤.
 4. If you have no symptom, probability of getting infected is 10%
-    - ì¦ìƒì´ ì—†ë‹¤ë©´, ê°ì—¼ë  í™•ë¥ ì€ 10%ì´ë‹¤.
+    - ì¦ìƒ?´ ?—†?‹¤ë©?, ê°ì—¼?  ?™•ë¥ ì?? 10%?´?‹¤.
 
 # Questions
 
 1. If you have chronical medical illness and 39 years old male.
-    - ë§Œì•½ ë§Œì„±ì§ˆí™˜ì´ ìˆëŠ” 39ì„¸ ë‚¨ì„±ì´ë¼ë©´?
+    - ë§Œì•½ ë§Œì„±ì§ˆí™˜?´ ?ˆ?Š” 39?„¸ ?‚¨?„±?´?¼ë©??
     - P(medical illness & 39y & male)
     - P(A and B) equals P(A)P(B|A) only if A and B are dependent.
     - Here we have only the fact as independent so P(A) * P(B)
@@ -245,7 +245,7 @@ The odds against drawing a jack is 12:1
     - 51/100 * 10/100 * 64/100 
     - 3.26%
 2. If you have chronical medical illness and 50 years old female(Alpha). And you met person from wuhan who has no symptom 50y male(Beta).
-    - ë§Œì„±ì§ˆí™˜ì´ ìˆëŠ” 50ëŒ€ ì—¬ì„±ì¸ë°(ì•ŒíŒŒ), ì¦ìƒì´ ì—†ëŠ” ìš°í•œì—ì„œ ì˜¨ ë‚¨ì(ë² íƒ€)ë¥¼ ë§Œë‚¬ë‹¤ë©´?
+    - ë§Œì„±ì§ˆí™˜?´ ?ˆ?Š” 50??? ?—¬?„±?¸?°(?•Œ?ŒŒ), ì¦ìƒ?´ ?—†?Š” ?š°?•œ?—?„œ ?˜¨ ?‚¨?(ë² í??)ë¥? ë§Œë‚¬?‹¤ë©??
     - P(medical illness & 50Y & female) met P(no symptom & 50 & male)
     - This time, meeting people is dependant relationship.
     - Let's say dependant parameter as meeting time
@@ -311,4 +311,25 @@ EX) For the "first five" wager in Roullette, we need either 0,00,1,2, or 3 to co
 
 - Expected winnings = Succeed[(5/38)($6)]+Lose[(33/38)($1)] :: -$0.0789
 - The house has about a 7.89% advantage
+
+1. Suppose an urn has 5 blue marbles and 3 red marbles. Assuming the marbles are replaced after being drawn, find the probability that the first two draws consist of one red and one blue marble
+
+P(One red marble and one blue marble) 
+- This is not first read and second blue
+- P(1st red)P(2nd blue|1st red) + P(1st bue)P(2nd red|1st blue)
+- If it is independent, P(1st red)P(2nd blue) + P(1st blue)P(2nd red)
+- 3/8 * 5/8 + 5/8 * 3/8
+
+# Backgammon game
+- Conclusions: If you have to leave a blot within 6 spots of your opponent,
+leave your blot as close to your opponent as possible. If you can place your blot
+at least 7 spots away, the further the better (except 11 and 12)
+
+- Suppose there are two blots, then the probability of hitting at least one of two pieces at distance of 3 and 9 from your piece is?
+
+- P(hitting distance of 3 or hitting the distance of 9)
+- P(hitting 3) + P(hitting 9) - P(hitting both)
+- 14/36 + 5/36 - 3/36
+- 16/36 = 4/9
+
 
