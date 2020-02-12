@@ -1,0 +1,21 @@
+---
+layout: "post"
+title: "Who AM I?"
+author: "mingi hong"
+date: 2020-02-08 13:14:24 -0700
+categories: "Career Interview"
+permalink: /:categories/:title.html
+---
+
+## WHO AM I?
+
+Hi, my name is mingi hong graduating Dakota State University on this may.
+I think I'm the one who you are looking for. Let me tell you three reasons why I'm the one.
+
+First reason is that I'm good at interfacing customer because I have an experience of sales and communicating with clients directly. I had a chance to run my own shopping mall through support from korean company. There was a young CEO competition, and I submitted my business proposal then I was selected. Even though I couldn't make it big, it was great experience becuase I analyzed market and, product to choose my item. Negotiated product price with japanese company. Photoshop, uploading, marketing, shipping,Customer Service. I did everything on my own. That is why I'm good at analyzing product. For example, I can say pilosa is bitmap indexing project that can save your data searching time because it isn't making copies of the data. so it is necessary when your data becoming very huge like more than 4 tera bytes. Important thing is volume of data is getting bigger for AI or Machine Learning these days.
+
+Second reason is that my hobby is blog posting and making youtube videos. Since I have an experience of viral marketing like blogging, It isn't difficult to write about product or company. Recently I mostly write about my college related work or AI related stuff on my git-hub blog. Because it is what I like to do, if there is a task like promoting the product with blog posts I could do that with pleasure.
+I saw pilosa's blog and your posts like Billion Taxi Ride Dataset and Using Bitmaps to perform range queries.
+
+Third reason is three years of IT experience. Not only all of those great experiences, But also I've got solid IT experiences. I started my first career at Nuclear Energy company. My job was server manager with ms-sql and windows server environment. But they wanted me to implement or modify new features to management program so, I had to learn PHP, Javascript, Jquery, Html like things. It took some time to analyze the program and source code, but I could implement employer's board, short-cut keys, Administrator's page very soon. After finishing the project, there is no room for further updates, so I changed my job as software engineer at LED company. My job was debugging C++ software at factory production. I'm fast learner, so I could learn C++ in short time. I could learn go lang very fast If i work in pilosa team. It was extremely fast-paced work environment because it was the production for Face ID projector chip and there was dead line for it. I was the only person who can speak english in my compnay, so I had to be involved in production meeting with apple and japanese company. I had to catch what they want and make strategy to accomplish it. Since I was studying and working at the same time, I chose to fail my classes to focus on the project. Because of my sacrifice, our project was successful and I was promoted as User Interface Manager after that. My job was making modern unique User Interface within 6 month with just 3 people including me. There were no design people, so I had to research colors, layout, visualization, and User experience as well. It was tough because it was my first time to make framework and design. But I could learn object oriented programming and recent modern design. We accomplished UI framework and after that I decided to focus on my study for my last year of DSU.
+In Conclusion, I think it is great opportunity for me and at the same time for pilosa team as well. I'm great team player who knows what responsibility is. I really want to work with this team because, making data virtualization also AI or machine learning related tool is facinating and I'm really interested in it. I don't know what part I would be responsible for, but I'm sure that I could accomplish good result. 

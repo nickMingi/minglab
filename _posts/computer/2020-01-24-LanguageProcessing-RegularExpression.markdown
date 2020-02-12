@@ -553,3 +553,245 @@ Derive & draw parse tree
 
 ![eID](/minglab/assets/EPlusID.png)
 
+# Abstract syntax tree
+- expression tree in this case (special case)
+
+Parse Tree is connected directly to grammar rule
+
+Abstract Syntax Tree (AST) represents the
+important/essential structure
+
+Expression tree
+- internal nodes are operators
+- leaves are the operands
+- left/right branch order matters
+
+# Side track ..
+1. Infix
+    - 2 + 3
+    - 2 * 3 + 4
+2. Postfix
+    - 2 3 +
+    - 2 3 * 4 +
+    - 2 3 * 3 2 + 4 * + = (2\*3)+((3+2)*4)
+    - 2 3 4 + * = 2 * (3 + 4)
+3. Prefix
+    - + 2 3
+    - + * 2 3 4
+
+# Evaluating a postfix expression
+- Using a stack
+- Number : push it
+- Operator: pop 2 items
+-           apply operation
+-           push result
+
+At end, single value on stack is the answer
+
+----------------------------------------------------------------
+Things you know:
+* Regular Language  (RL)
+* Regular Expressions  (RE)
+* Deterministic Finite State Automata  (DFA)
+* Lex    (RE to tokenizing)
+* Context Free Grammar (CFG)
+* Context Free Language (CFL)
+* Left/Right Most Derivation (LMD, RMD)
+* Parse tree
+* Abstract Syntax Tree (AST)
+* Expression Tree
+
+----------------------------------------------------------------
+Context-Free Grammar  (CFG)
+ - defines a Context-Free Language  (CFL)
+
+Context Free Grammar
+ - series of rewriting rules
+ - LHS: single symbol
+ - RHS: one or more symbols
+ - BNF   LHS = RHS  rule format
+
+Derivation: from the start symbol, series of rewriting
+       steps to arrive at a word (terminal string)
+
+   Terminal: lowercase  ( letters in the language alphabet )
+                            -- only on RHS
+                    symbols that make up elements of language
+
+Nonterminal: uppercase  ( symbols in the grammar  )
+                            -- 1 on LHS, can be on RHS too
+
+
+If G is a context free grammar,
+L(G) is a context free language
+   - elements are all strings containing only terminal symbols
+      that can be produced by the grammar
+
+Derivation: from the start symbol, series of rewriting
+       steps to arrive at a word (terminal string)
+
+Derivation
+  -  left-most   [ given choice, rewrite the left  NT first ]
+  -  right-most  [ given choice, rewrite the right NT first ]
+
+Parse Tree
+  - tree representation of the derivation
+  - leaves are Terminal symbols
+  - internal nodes are NonTerminal symbols
+
+----------------------------------------------------------------
+* Consider basic expressions
+
+Grammar:
+ Expr = Expr + Expr
+ Expr = Expr * Expr
+ Expr = id
+ Expr = num
+
+----------------------------------------------------------------
+Ambiguity
+ A grammar G for language L(G) is ambiguous if
+  - for a string s in L(G)
+      a) there are two distinct left-most derivations
+      b) there are two distinct right-most derivations
+      c) there are two distinct parse trees
+
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+Another grammar for expressions
+
+E = E + T                  
+E = T
+T = T * F
+T = F
+F = id
+F = num
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+Abstract syntax tree
+ --- expression tree in this case  (special case)
+
+Parse Tree is connected directly to grammar rule
+
+Abstract Syntax Tree (AST) represents the 
+   important/essential structure
+
+Expresion tree
+  - internal notes are operators
+  - leaves are the operangs
+  - left/right branch order matters
+
+
+
+Draw AST  ( expression tree in this case )
+2 * 3 + 4 * 5
+
+![AST](/minglab/assets/AST.png)
+
+
+
+----------------------------------------------------------------
+
+L is the assignment statement language...
+ x := 2 + 5;
+ y := 2 * x + 4;
+ z := y;
+...
+
+P = ASL
+
+ASL = ASL AS
+ASL = AS
+
+AS =   id :=  E ;
+E  = E + T                  
+E  = T
+T  = T * F
+T  = F
+F  = id
+F  = num
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+YACC files(based on CFG)
+
+ Structure similar to Lex files(Based on RX)
+    %%
+
+    %%
+
+
+CFG rules
+ LHS : RHS ;
+
+ LHS : RHS1 | RHS2 | RHS3 ;
+
+ LHS: RHS1;
+ LHS: RHS2;
+ LHS: RHS3;
+
+
+
+
+ LHS : RHS  { actions } ;
+
+
+Actions may refer to rule components
+  $1 $2, etc  are the RHS elements
+  $$ is the LHS
+
+Action fires when the grammar rule is applied.
+
+
+Attribute grammar - more examples.... 
+  -- another "formal method"
+
+{% highlight yacc %}
+%{
+ #include <stdio.h>
+
+int yylex();
+void yyerror( char *s);
+%}
+
+%%
+
+ 
+H : G
+  | H G
+  ;
+
+
+G :  S '\n'  { printf("%d a's\n", $$);  }
+  ;
+
+S : 'a'    { $$ = 1; }           
+  | S 'a'  { $$ = $1 + 1; } 
+  ;
+
+%%
+int yylex()
+{
+ int c;
+ c = getchar();
+ return c;
+}
+
+void main()
+{
+ yyparse();
+}
+
+void yyerror( char *s )
+{
+}
+{% end highlight %}
+
+- yacc aaa.y
+- gcc y.tab.c
+- this program count number of a's
+
+
+

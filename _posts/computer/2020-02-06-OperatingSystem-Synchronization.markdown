@@ -21,3 +21,28 @@ permalink: /:categories/:title.html
 
 - Critical section model
 
+# Critical Section Problem
+
+- a section of code where the processes may be changing common data [Critical Section]
+
+- CS - mutual exclusion 
+{% highlight c %}
+    - do{ entry section
+            // critical section
+          exit section
+            // remainder section
+    }while(1);
+{% end highlight %}
+
+1. mutual exclusion: only 1 process in the CS at a time
+2. progress: if the cs is empty, and there is a process that want into the cs, only processes not in their remainder section can have a say on who gets into the cs. AND the selection must not be postponed indefinitely. 
+3. bounded wait: there exists a bound on the number of times a process asking to be let into the cs is not picked.
+
+- Two process solution
+
+# Multi - process solution to CS problem
+
+Bakery
+
+Algorithm
+

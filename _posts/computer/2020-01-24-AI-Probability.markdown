@@ -332,4 +332,22 @@ at least 7 spots away, the further the better (except 11 and 12)
 - 14/36 + 5/36 - 3/36
 - 16/36 = 4/9
 
+# Entering and Bearing off
+
+- Bearing off: can start once all of your pieces are in your inner table
+- Maximize the chance of winning on the following roll.
+    - ex) your inner table is indicated as follows
+- You roll a 2 and a 1.
+    - Do you move to the 3 and 2 points or the 4 and 1 points?
+    - Let's look at 3 and 2 points(Not winning)
+    - (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),
+    - (2,1),(3,1),(4,1),(5,1),(6,1)
+    - we've got 11 not winning case :: 1-11/36 = 25/36
+    - Let's look at 4 and 1 points(Not winning)
+    - (1,1),(1,2),(1,3),
+    - (2,1),(3,1),(2,3),(3,2)
+    - we've got 7 not winning case :: 1-7/36 = 29/36
+- Conclusion: we make the more to the 4 and 1 points to have the better chance of winning on the following more.
+
+- Entering innertable, two pieces and probability of finishing it at one turn. 
 
