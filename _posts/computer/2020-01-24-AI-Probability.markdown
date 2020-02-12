@@ -353,3 +353,10 @@ at least 7 spots away, the further the better (except 11 and 12)
 
 # The doubling cube
 
+S = current state
+
+P = your estimated probability of winning the game
+
+1 - P = your estimated probability of losing the game when should you accept a double?
+
+EV = expected value
