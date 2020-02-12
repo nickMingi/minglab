@@ -70,10 +70,11 @@ Total of 100%
         - 1-0.91 : 0.09 : 9%
     - multiply it together : 0.45%
 2. What is the probability of not getting ***** servants or crafts at all in a roll(10).
-    - P(Guaranteed card as not 5star card) * (P(Not 5star card)^9)
+    - P(Guaranteed card as No 5star card) * (P(No 5star card)^9)
         - We want to inversely caculate it like 1-P = A
-        - P(Guaranteed card as 5star card) * (1-P(At least one 5star card)^9)
-        - 20% * ((1-.95)^9)
+        - P(Guaranteed card as 5star card) * (P(At least one 5star card)^9)
+        - In other words, 1-P(No 5star card)^9
+        - 20% * (1-((.95)^9))
         - 20% * 37%
         - 100% - (7.4%) : 92.6%
     
