@@ -342,7 +342,7 @@ at least 7 spots away, the further the better (except 11 and 12)
     - Let's look at 3 and 2 points(Not winning)
     - (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),
     - (2,1),(3,1),(4,1),(5,1),(6,1)
-    - we've got 11 not winning case :: 1-11/36 = 25/36
+    - we've got 11 not winning case : 1-11/36 = 25/36
     - Let's look at 4 and 1 points(Not winning)
     - (1,1),(1,2),(1,3),
     - (2,1),(3,1),(2,3),(3,2)
@@ -410,5 +410,5 @@ s(2p-1) = s(4p-2)
 Conclusion: when p > 1/2 doubling seems reasonable and when p > 3/4 you 
 hope your doubling gets a accepted.
 
-
+You are white and the board is a shown It is your roll and you control the doubling cube. Should you double?
 

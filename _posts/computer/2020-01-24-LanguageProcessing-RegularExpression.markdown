@@ -574,7 +574,7 @@ Expression tree
 -           apply operation
 -           push result
 
-![AST](/minglab/assets/AST.png)
+![AST2](/minglab/assets/AST.png)
 
 - yacc aaa.y
 - gcc y.tab.c
