@@ -25,4 +25,7 @@ permalink: /:categories/:title.html
 
 - a section of code where the processes may be changing common data Critical Section
 
+![OSscreen](/minglab/assets/OSscreen.png)
+
+
 
