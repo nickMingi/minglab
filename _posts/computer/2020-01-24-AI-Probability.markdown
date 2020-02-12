@@ -226,18 +226,13 @@ The odds against drawing a jack is 12:1
 # Facts
 
 1. If you have chronical medical illness, probability of getting infected is 51%
-    - ë§Œì•½ ë§Œì„±ì§ˆí™˜?´ ?ˆ?‹¤ë©?, ê°ì—¼?  ?™•ë¥ ì?? 51%?´?‹¤.
 2. If you are male, probability of getting infected is 2 times more than female(32% probability of getting infection)
-    - ë§Œì•½ ?‚¨?„±?´?¼ë©?, ê°ì—¼?  ?™•ë¥ ì?? ?—¬?„±ë³´ë‹¤ 2ë°? ?†’?‹¤.
 3. If you are younger than 39 years old, probability of getting infected is 10%
-    - 39?„¸ ?´?•˜?¼ë©?, ê°ì—¼?  ?™•ë¥ ì?? 10%?´?‹¤.
 4. If you have no symptom, probability of getting infected is 10%
-    - ì¦ìƒ?´ ?—†?‹¤ë©?, ê°ì—¼?  ?™•ë¥ ì?? 10%?´?‹¤.
 
 # Questions
 
 1. If you have chronical medical illness and 39 years old male.
-    - ë§Œì•½ ë§Œì„±ì§ˆí™˜?´ ?ˆ?Š” 39?„¸ ?‚¨?„±?´?¼ë©??
     - P(medical illness & 39y & male)
     - P(A and B) equals P(A)P(B|A) only if A and B are dependent.
     - Here we have only the fact as independent so P(A) * P(B)
@@ -245,7 +240,6 @@ The odds against drawing a jack is 12:1
     - 51/100 * 10/100 * 64/100 
     - 3.26%
 2. If you have chronical medical illness and 50 years old female(Alpha). And you met person from wuhan who has no symptom 50y male(Beta).
-    - ë§Œì„±ì§ˆí™˜?´ ?ˆ?Š” 50??? ?—¬?„±?¸?°(?•Œ?ŒŒ), ì¦ìƒ?´ ?—†?Š” ?š°?•œ?—?„œ ?˜¨ ?‚¨?(ë² í??)ë¥? ë§Œë‚¬?‹¤ë©??
     - P(medical illness & 50Y & female) met P(no symptom & 50 & male)
     - This time, meeting people is dependant relationship.
     - Let's say dependant parameter as meeting time
