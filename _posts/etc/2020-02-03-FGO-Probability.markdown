@@ -74,7 +74,7 @@ Total of 100%
         - We want to inversely caculate it like 1-P = A
         - P(Guaranteed card as 5star card) * (P(At least one 5star card)^9)
         - In other words, 1-P(No 5star card)^9
-        - 20% * (1-((.95)^9))
-        - 20% * 37%
-        - 100% - (7.4%) : 92.6%
+        - 25% * (1-((.95)^9))
+        - 25% * 37%
+        - 100% - (9.3%) : 90.7%
     
