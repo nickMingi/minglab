@@ -27,7 +27,7 @@ permalink: /:categories/:title.html
 
 - CS - mutual exclusion 
 {% highlight c %}
-    - do{ entry section
+    do{ entry section
             // critical section
           exit section
             // remainder section

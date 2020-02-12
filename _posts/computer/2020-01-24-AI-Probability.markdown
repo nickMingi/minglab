@@ -380,3 +380,35 @@ p > 1/4
 
 When should you ask your opponent to double?
 
+EV(opponent refuses) = S
+
+EV(opponent accepts) = p(2s)+(1-p)(-2s)=s(4p-2)
+
+When is EV(opponent accept) > EV(opponent refuse)?
+
+S(4p-2) > s
+
+4p-2 > 1
+
+4p > 3
+
+p > 3/4
+
+If p < 3/4 you would prefer a concession and if p > 3/4
+you hope they accept your doubling
+
+EV(no double is offered) = P(s) + (1-p)(-s) = s(2p-1)
+
+EV(no double) = EV(opponent accepts)
+
+s(2p-1) = s(4p-2)
+
+2p-1 = 4p-2
+
+1/2 = p
+
+Conclusion: when p > 1/2 doubling seems reasonable and when p > 3/4 you 
+hope your doubling gets a accepted.
+
+
+
