@@ -566,18 +566,6 @@ Expression tree
 - leaves are the operands
 - left/right branch order matters
 
-# Side track ..
-1. Infix
-    - 2 + 3
-    - 2 * 3 + 4
-2. Postfix
-    - 2 3 +
-    - 2 3 * 4 +
-    - 2 3 * 3 2 + 4 * + = (2*3)+((3+2)*4)
-    - 2 3 4 + * = 2 * (3 + 4)
-3. Prefix
-    - \+ 2 3
-    - \+ \* 2 3 4
 
 # Evaluating a postfix expression
 - Using a stack
