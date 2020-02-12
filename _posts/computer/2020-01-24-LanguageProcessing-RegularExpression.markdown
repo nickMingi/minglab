@@ -588,7 +588,6 @@ Expression tree
 
 At end, single value on stack is the answer
 
-----------------------------------------------------------------
 Things you know:
 * Regular Language  (RL)
 * Regular Expressions  (RE)
@@ -601,7 +600,6 @@ Things you know:
 * Abstract Syntax Tree (AST)
 * Expression Tree
 
-----------------------------------------------------------------
 Context-Free Grammar  (CFG)
  - defines a Context-Free Language  (CFL)
 
@@ -639,7 +637,6 @@ Parse Tree
   - leaves are Terminal symbols
   - internal nodes are NonTerminal symbols
 
-----------------------------------------------------------------
 * Consider basic expressions
 
 Grammar:
@@ -648,7 +645,6 @@ Grammar:
  Expr = id
  Expr = num
 
-----------------------------------------------------------------
 Ambiguity
  A grammar G for language L(G) is ambiguous if
   - for a string s in L(G)
@@ -656,9 +652,6 @@ Ambiguity
       b) there are two distinct right-most derivations
       c) there are two distinct parse trees
 
-
-----------------------------------------------------------------
-----------------------------------------------------------------
 Another grammar for expressions
 
 E = E + T                  
@@ -667,11 +660,9 @@ T = T * F
 T = F
 F = id
 F = num
-----------------------------------------------------------------
-----------------------------------------------------------------
 
 Abstract syntax tree
- --- expression tree in this case  (special case)
+  expression tree in this case  (special case)
 
 Parse Tree is connected directly to grammar rule
 
@@ -691,9 +682,6 @@ Draw AST  ( expression tree in this case )
 ![AST](/minglab/assets/AST.png)
 
 
-
-----------------------------------------------------------------
-
 L is the assignment statement language...
  x := 2 + 5;
  y := 2 * x + 4;
@@ -712,8 +700,6 @@ T  = T * F
 T  = F
 F  = id
 F  = num
-----------------------------------------------------------------
-----------------------------------------------------------------
 
 YACC files(based on CFG)
 
