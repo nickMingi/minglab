@@ -23,7 +23,7 @@ permalink: /:categories/:title.html
 
 # Critical Section Problem
 
-- a section of code where the processes may be changing common data [Critical Section]
+- a section of code where the processes may be changing common data Critical Section
 
 - CS - mutual exclusion 
 {% highlight c %}

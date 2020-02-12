@@ -378,3 +378,5 @@ p > 1/4
 
 - It seems reasonable to accept a double when p > 1/4
 
+When should you ask your opponent to double?
+
