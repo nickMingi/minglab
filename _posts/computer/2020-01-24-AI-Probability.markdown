@@ -351,3 +351,5 @@ at least 7 spots away, the further the better (except 11 and 12)
 
 - Entering innertable, two pieces and probability of finishing it at one turn. 
 
+# The doubling cube
+

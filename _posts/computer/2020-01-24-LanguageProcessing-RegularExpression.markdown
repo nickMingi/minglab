@@ -734,49 +734,8 @@ Actions may refer to rule components
 Action fires when the grammar rule is applied.
 
 
-Attribute grammar - more examples.... 
-  -- another "formal method"
-
-{% highlight yacc %}
-%{
- #include <stdio.h>
-
-int yylex();
-void yyerror( char *s);
-%}
-
-%%
-
- 
-H : G
-  | H G
-  ;
-
-
-G :  S '\n'  { printf("%d a's\n", $$);  }
-  ;
-
-S : 'a'    { $$ = 1; }           
-  | S 'a'  { $$ = $1 + 1; } 
-  ;
-
-%%
-int yylex()
-{
- int c;
- c = getchar();
- return c;
-}
-
-void main()
-{
- yyparse();
-}
-
-void yyerror( char *s )
-{
-}
-{% end highlight %}
+Attribute grammar - more examples
+   another "formal method"
 
 - yacc aaa.y
 - gcc y.tab.c
