@@ -588,7 +588,7 @@ Expression tree
 
 At end, single value on stack is the answer
 
-Things you know:
+Things you know
 * Regular Language  (RL)
 * Regular Expressions  (RE)
 * Deterministic Finite State Automata  (DFA)
@@ -600,8 +600,8 @@ Things you know:
 * Abstract Syntax Tree (AST)
 * Expression Tree
 
-Context-Free Grammar  (CFG)
- - defines a Context-Free Language  (CFL)
+Context-Free Grammar  (CFG
+- defines a Context-Free Language  (CFL)
 
 Context Free Grammar
  - series of rewriting rules
@@ -637,7 +637,7 @@ Parse Tree
   - leaves are Terminal symbols
   - internal nodes are NonTerminal symbols
 
-* Consider basic expressions
+Consider basic expressions
 
 Grammar:
  Expr = Expr + Expr
@@ -645,14 +645,16 @@ Grammar:
  Expr = id
  Expr = num
 
+
 Ambiguity
  A grammar G for language L(G) is ambiguous if
   - for a string s in L(G)
       a) there are two distinct left-most derivations
       b) there are two distinct right-most derivations
       c) there are two distinct parse trees
+      
 
-Another grammar for expressions
+- Another grammar for expressions
 
 E = E + T                  
 E = T
@@ -660,6 +662,7 @@ T = T * F
 T = F
 F = id
 F = num
+
 
 Abstract syntax tree
   expression tree in this case  (special case)
@@ -681,8 +684,7 @@ Draw AST  ( expression tree in this case )
 
 ![AST](/minglab/assets/AST.png)
 
-
-L is the assignment statement language...
+- L is the assignment statement language...
  x := 2 + 5;
  y := 2 * x + 4;
  z := y;
@@ -700,6 +702,7 @@ T  = T * F
 T  = F
 F  = id
 F  = num
+
 
 YACC files(based on CFG)
 
