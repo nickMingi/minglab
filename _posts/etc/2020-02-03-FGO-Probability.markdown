@@ -57,20 +57,23 @@ Total of 100%
 
 # Exercise
 1. What is the probability of getting two ***** servants in a roll(10). 
-    - P(Guaranteed card as 5star servant) * (P(5star servant)^9)
+    - P(Guaranteed card as 5star servant) * (1-P(No 5star servant)^9)
         - Sample Space for Guaranteed card : 15
         - 1:3:4:12
         - 5:15:20:60
         - P(guaranteed card as 5star servant) : 5%
-    - P(***** servant) : 0.043% -> specific one character
-        - But I'd like to know ***** servant in general -> 1%
-    - multiply it together : 0.05%
-    - So, If you roll 20000 times, you would get 2 ***** servants in a roll.
+    - 1-P(No ***** servant) 
+        - No ***** servant is 99%
+        - we've got 9 chances
+        - 0.99^9
+        - 0.91
+        - 1-0.91 : 0.09 : 9%
+    - multiply it together : 0.45%
 2. What is the probability of not getting ***** servants or crafts at all in a roll(10).
     - P(Guaranteed card as not 5star card) * (P(Not 5star card)^9)
         - We want to inversely caculate it like 1-P = A
-        - P(Guaranteed card as 5star card) * (P(At least one 5star card)^9)
-        - 20% * (1-(.95)^9)
+        - P(Guaranteed card as 5star card) * (1-P(At least one 5star card)^9)
+        - 20% * ((1-.95)^9)
         - 20% * 37%
         - 100% - (7.4%) : 92.6%
     
