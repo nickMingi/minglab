@@ -359,4 +359,22 @@ P = your estimated probability of winning the game
 
 1 - P = your estimated probability of losing the game when should you accept a double?
 
-EV = expected value
+EV(refuse) = expected value = -S
+EV(accept) = P(2s)+(1-p)(-2s)=2ps-2s+2ps
+
+= 4ps - 2s
+
+= S(4p-2)
+
+EV(accept) > EV(refuese)
+
+S(4p-2) > -S
+
+4p-2 > -1
+
+4p > 1
+
+p > 1/4
+
+- It seems reasonable to accept a double when p > 1/4
+
