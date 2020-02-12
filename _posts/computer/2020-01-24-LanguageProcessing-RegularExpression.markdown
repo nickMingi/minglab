@@ -553,32 +553,6 @@ Derive & draw parse tree
 
 ![eID](/minglab/assets/EPlusID.png)
 
-# Abstract syntax tree
-- expression tree in this case (special case)
-
-Parse Tree is connected directly to grammar rule
-
-Abstract Syntax Tree (AST) represents the
-important/essential structure
-
-Expression tree
-- internal nodes are operators
-- leaves are the operands
-- left/right branch order matters
-
-
-# Evaluating a postfix expression
-- Using a stack
-- Number : push it
-- Operator: pop 2 items
--           apply operation
--           push result
-
-![AST2](/minglab/assets/AST.png)
-
-- yacc aaa.y
-- gcc y.tab.c
-- this program count number of a's
 
 
 
