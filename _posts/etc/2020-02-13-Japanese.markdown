@@ -1,0 +1,21 @@
+---
+layout: "post"
+title: "Japanese study"
+author: "mingi hong"
+date: 2020-02-13 18:25:34 -0700
+categories: "etc Japanese"
+permalink: /:categories/:title.html
+---
+
+## Japanese Study
+
+1. 境界　Kyoukai - boundary
+2. 帰ろ　Kaero   - going back
+3. 出会ってしまった　De-acte simacta - have met
+4. 正しい　Tadasii - correct
+5. 事件の犯人　JikennoHannin - Culprit in the case
+6. 見つけました　Mitukemasita - I found it
+7. 信じて　　Sinjite - believe in
+8. これを聞いたら　Koreokiitara - if you hear this
+9. 調べてみます　Sirabetemimasu - I will investigate
+10. 程々にな　　Hodohodonina - Moderately
