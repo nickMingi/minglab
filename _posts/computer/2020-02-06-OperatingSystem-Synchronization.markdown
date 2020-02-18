@@ -30,12 +30,12 @@ permalink: /:categories/:title.html
 # Difference between Concurrency and Parallelism
 - Structue and implementation
 
-
+![syncro1](/minglab/assets/syncro1.png)
 This is just showing hardware logic.
 
 circuit tree 
 
-
+![syncro2](/minglab/assets/syncro2.png)
 This is hardware logic
 
 ![hardwaresync](/minglab/assets/HardwareSync.png)
@@ -44,6 +44,7 @@ This is hardware logic
 - aquire()
 - release()
 
+![syncro3](/minglab/assets/syncro3.png)
 
 # Semaphore
 - Simplest of synchronization tool
@@ -57,6 +58,7 @@ This is hardware logic
 
 # Non-busy wait semaphore
 
+![syncro4](/minglab/assets/syncro4.png)
 
 # Deadlock
 - A process requests resources; if the resources are not available at that time, the process enters a waiting state. Sometimes, a waiting process is never again able to change state, because the resources it has requested are held by other waiting processes.
