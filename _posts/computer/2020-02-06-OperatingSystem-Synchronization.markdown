@@ -136,3 +136,33 @@ do{
     }
 {% end highlight %}
 
+# Deadlock
+- A process requests resources; if the resources are not available at that time, the process enters a waiting state. Sometimes, a waiting process is never again able to change state, because the resources it has requested are held by other waiting processes.
+- Necessary conditions for deadlock
+    1. Mutual Exclusion
+    2. Hold & Wait : process holding resource while waiting
+    3. No Preemption : holding your resource, another process can't take it away
+    4. Circular Wait : there is circle in between processes
+        - p0->p1->p2->p0
+- Resource allocation graph 
+    - P = process
+    - R = resource
+    - Pi -> Rj request edge
+    - Rj -> pi allocated edge
+    - Do we have a deadlock?
+
+# Methods for handling deadlocks
+1. we can use a protocol to prevent or avoid deadlocks, ensuring that the system will never enter a deadlocked state.
+    - prevent: remove 1 or more of the necessary cmd for deadlock
+    - avoid : keep the system in a "safe" state
+2. we can allow the system to enter a deadlocked state,detect it, and recovoer.
+    - detection & recovery: 
+3. we can ignore the problem altogether and pretend that deadlocks never occur in the system.
+    - Ignore: application developer has to handle dead lock(Unix,windows)
+
+# Starvation is not a deadlock
+- like a chopstick in dining If you don't get both, you are starving
+
+
+
+
