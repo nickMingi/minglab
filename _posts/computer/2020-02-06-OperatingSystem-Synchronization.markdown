@@ -31,7 +31,7 @@ permalink: /:categories/:title.html
 - Structue and implementation
 
 # Syncronization in Hardware
-{% highlight c++ %}
+{% highlight c %}
  Test & Set: boolean test&set (boolean &target)
     {
         boolean rv = target;
@@ -51,7 +51,7 @@ This is just showing hardware logic.
 
 circuit tree 
 
-{% highlight c++ %}
+{% highlight c %}
 compare-and-swap
 int compare-swap(int &value, int expected, int new_value)
 {
@@ -77,7 +77,7 @@ This is hardware logic
 # Mutex Lock
 - aquire()
 - release()
-{% highlight c++ %}
+{% highlight c %}
 aquire()
 {
     while(!available); // here we get busy wait(spin lock)
