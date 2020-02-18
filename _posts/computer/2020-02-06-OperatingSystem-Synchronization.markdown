@@ -89,7 +89,7 @@ release()
 }
 {% end highlight %}
 
-{% highlight c++ %}
+{% highlight c %}
 do{
     aquire(lock);
         cs
