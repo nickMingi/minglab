@@ -87,6 +87,11 @@ This is hardware logic
 # Starvation is not a deadlock
 - like a chopstick in dining If you don't get both, you are starving
 
+# Bankers Algorithm
 
+# Safety Algorithm
 
+# Resource Request Algorithm
+
+Remember safe sequence term (ways of getting out)
 
