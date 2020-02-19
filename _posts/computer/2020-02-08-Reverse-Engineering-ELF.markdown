@@ -91,3 +91,33 @@ main analysis
 - file output
 output: ELF 32-bit LSB pie executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=c6af3a994e1255405e9fab0b970d5071ea33a668, not stripped
 - history | grep "*output"
+- we know type and architecture and bits
+
+Other interesting things
+- debugging symbols present
+- file command output (2/19/2020): ELF 32-bit LSB pie executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=c6af3a994e1255405e9fab0b970d5071ea33a668, not stripped
+
+2. using readelf
+- greadelf -h output
+![greadelf](/minglab/assets/greadelfheader.png)
+- we know entry(starting) point
+- if your starting point is small(before runtime), out virtual address space is changing (It is position independent)
+- to verify it
+- greadelf -x .text output
+![verifystart](/minglab/assets/Verifystartpoint.png)
+
+3. using gdb
+- gdb output
+- disas main
+- we know main address by it
+- stack space?
+    - 0x58 is subtracted from ESP (main+17)
+- arguments seem to be passed through registers
+    - ecx contained argument
+    - failed jump(failed password)
+    - main expects a password to be provided at run time
+    - ecx changed to 2
+    - jump successful
+- x/s oxffffd344 (examine string)
+- if you want to know calling convention, 
+- nexti (step over the call continue without me step through individual thing)
