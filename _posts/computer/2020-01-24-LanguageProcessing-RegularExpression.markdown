@@ -559,6 +559,18 @@ Derive & draw parse tree
 
 ![AST](/minglab/assets/AST.png)
 
+# Attribute Grammar
+
+What is attribute
+- perhaps you've heard that word before?
+
+Parse tree
+
+Decorated parse tree
+
+YACC is based on this formalism, so let's dig in
+
+Attribute & computation rules are associated with CFG rules
 
 
 
