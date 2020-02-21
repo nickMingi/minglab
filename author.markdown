@@ -60,6 +60,7 @@ Mingi Hong.
 ```
 
 # RESUME
+![resume](/minglab/assets/resume.png)
 
 # Leadership Role
 
