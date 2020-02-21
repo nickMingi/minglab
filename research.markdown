@@ -10,5 +10,5 @@ title: "Research"
 # Research Items
 [1. Why children learn languages faster than adults](/minglab/research/Learning-Language.html)
 
-2. Why my mother's time and my time is different
+[2. Why my mother's time and my time is different](/minglab/research/Time-Difference.html)
 
