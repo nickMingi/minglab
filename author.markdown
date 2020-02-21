@@ -60,14 +60,14 @@ and I look forward to hearing from you
 All the best,
 Mingi Hong.
 ```
-
+---
 
 
 # RESUME
 ![resume](/minglab/assets/resume.png)
 
 
-
+---
 # Leadership Role
 
 ```
@@ -89,7 +89,7 @@ d
 ```
 
 
-
+---
 # Club Activity
 
 ```
@@ -111,11 +111,11 @@ d
 ```
 
 
-
+---
 # Air Force Experience
 ![leadership](/minglab/assets/leadership.png)
 
 
-
+---
 # Summary
 
