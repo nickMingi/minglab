@@ -15,12 +15,37 @@ phone           | 213-322-4435
 
 # Table of contents
 [1. Cover Letter](#Cover_Letter)
+
 [2. Resume](#RESUME)
+
 3. Leadership role
 4. Club activity
 5. Air force experience
 6. Summary
 
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
 
 
 
@@ -43,6 +68,29 @@ phone           | 213-322-4435
 
 
 # Cover Letter
+
+d
+d
+d
+d
+d
+d
+d
+d
+d
+dd
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+d
+
 
 # RESUME
 
