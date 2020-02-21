@@ -14,15 +14,16 @@ email           | marin333669@gmail.com
 phone           | 213-322-4435
 
 # Table of contents
-[1. Cover Letter](#Cover_Letter)
+[1. Cover Letter](#cover_letter)
 
-[2. Resume](#RESUME)
+[2. Resume](#resume)
 
 3. Leadership role
 4. Club activity
 5. Air force experience
 6. Summary
 
+```
 d
 d
 d
@@ -46,7 +47,7 @@ d
 d
 d
 d
-
+```
 
 
 
@@ -69,6 +70,7 @@ d
 
 # Cover Letter
 
+```
 d
 d
 d
@@ -90,7 +92,7 @@ d
 d
 d
 d
-
+```
 
 # RESUME
 
