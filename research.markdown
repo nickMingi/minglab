@@ -8,7 +8,7 @@ title: "Research"
 ![neuron](/minglab/assets/neuron.gif)
 
 # Research Items
-[1. Why children learn languages faster than adults](/minglab/_posts/research/2020-02-20-Learning-Language.markdown)
+[1. Why children learn languages faster than adults](/minglab/research/Learning-Language.html)
 
 2. Why my mother's time and my time is different
 
