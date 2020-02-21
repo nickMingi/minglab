@@ -71,21 +71,30 @@ Mingi Hong.
 # Leadership Role
 
 ```
-When I was working at factory in Japan..
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
+When I was working at factory in Japan
+I was the only person who can speak english
+so I had to be involved production meeting
+to improve UPH(unit per hour) and to reduce
+downtime of equipment.
+Even though I was studying and working 
+at the same time, I volunteered to take
+critical role in production to safely 
+finish our project. 
+To find the root cause of downtime, I had to
+analyze the log and I found the gap between
+loading and unloading. 
+First reason of gap is that operator's low attention.
+equipment was idle for a long time since another load
+was not started which is run by operator.
+To prevent this, we need to equip sensor to alert 
+process will be done soon. But also, eventually we
+come up with continuous production without ending
+each production. It helped improvement of 40% of
+production efficiency.
+As a result, our project was successful but I got
+F from school classes. I showed my dedication to my
+manager during the project, and I was promoted as
+User Interface Manager.
 ```
 
 
@@ -114,7 +123,8 @@ d
 ---
 # Air Force Experience
 ![leadership](/minglab/assets/leadership.png)
-
+![army1](/minglab/assets/Army1.jpg)
+![army2](/minglab/assets/Army2.jpg)
 
 ---
 # Summary
