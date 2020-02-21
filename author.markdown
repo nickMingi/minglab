@@ -5,7 +5,7 @@ title: Author
 
 ![profile](/minglab/assets/profile.jpg)
 
-Author is Mingi Hong studied computer science at Dakota State University from 2016 to 2020.
+> Author is Mingi Hong studied computer science at Dakota State University from 2016 to 2020.
 
 ITEM            | CONTENTS
 --------------- | -------------
@@ -26,7 +26,9 @@ phone           | 213-322-4435
 
 [6. Summary](#summary)
 
-![osakamingi](/minglab/assets/YoutubeIntroduction.jpg)
+[![osakamingi](/minglab/assets/YoutubeIntroduction.jpg)](https://youtu.be/RQppPO6S-60)
+
+
 
 # Cover Letter
 
@@ -59,8 +61,12 @@ All the best,
 Mingi Hong.
 ```
 
+
+
 # RESUME
 ![resume](/minglab/assets/resume.png)
+
+
 
 # Leadership Role
 
@@ -81,6 +87,8 @@ d
 d
 d
 ```
+
+
 
 # Club Activity
 
@@ -103,8 +111,11 @@ d
 ```
 
 
+
 # Air Force Experience
 ![leadership](/minglab/assets/leadership.png)
+
+
 
 # Summary
 
