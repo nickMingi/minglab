@@ -26,7 +26,7 @@ phone           | 213-322-4435
 
 [6. Summary](#summary)
 
-![osakamingi](/minglab/assets/OSAKA_MINGIHONG.jpeg)
+![osakamingi](/minglab/assets/YoutubeIntroduction.jpg)
 
 # Cover Letter
 
@@ -104,7 +104,7 @@ d
 
 
 # Air Force Experience
-
+![leadership](/minglab/assets/leadership.png)
 
 # Summary
 
