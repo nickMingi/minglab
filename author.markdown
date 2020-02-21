@@ -14,12 +14,12 @@ email           | marin333669@gmail.com
 phone           | 213-322-4435
 
 # Table of contents
-    <a name="cover_letter">1. Cover Letter</a>
-    2. Resume
-    3. Leadership role
-    4. Club activity
-    5. Air force experience
-    6. Summary
+[1. Cover Letter](#cover_letter)
+2. Resume
+3. Leadership role
+4. Club activity
+5. Air force experience
+6. Summary
 
 
 
@@ -42,7 +42,7 @@ phone           | 213-322-4435
 
 
 
-# Cover Letter[coverletter](#cover_letter)
+# CoverLetter(#cover_letter)
 
 # Resume
 
