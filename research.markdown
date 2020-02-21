@@ -3,4 +3,5 @@ layout: "page"
 title: "Research"
 ---
 
-Research items
+![brainfiringneurons](/minglab/assets/Brainwaves-firing-neurons.gif)
+
