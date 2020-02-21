@@ -567,12 +567,51 @@ What is attribute
 Parse tree
 
 Decorated parse tree
+    - attributes attached to tree
+    - computed based on rules associated with CFG
 
 YACC is based on this formalism, so let's dig in
 
 Attribute & computation rules are associated with CFG rules
 
+G = A   { G.len = A.len }
+A = a   { A.len = 1 }
+A = a A { A.len = 1 + A1.len }
 
+{ s | s in (a|b)+ and num_s(s)=num_b(s) }
 
+Let's work up the attribute grammar
 
+a) Start with CFG [[ note it may not be "the language" ]]
+
+b) Determine attributes
+
+c) Add the rules
+
+d) Test it abb
+
+Do you know how to convert a decimal string to a decimal integer?
+Reading left to right?
+
+- when we go to next digit, multiply number by 10 and add another digit.
+
+If it is right to left?
+
+- when we go to next digit, multiply next digit by 10^index and add digit.
+
+Binary to int left to right
+
+- complecated 
+- S = A
+- A = 1
+- A = 0
+- A = 1A
+- A = 0A
+- Value X 2 + (1 or 0)
+- 110 equals 6
+- 1101 equals 13
+
+Binary to int right to left
+
+- simple
 
