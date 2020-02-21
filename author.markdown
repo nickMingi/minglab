@@ -26,7 +26,7 @@ phone           | 213-322-4435
 
 [6. Summary](#summary)
 
-![osakamingi](OSAKA_MINGIHONG.jpeg)
+![osakamingi](/minglab/assets/OSAKA_MINGIHONG.jpeg)
 
 # Cover Letter
 
