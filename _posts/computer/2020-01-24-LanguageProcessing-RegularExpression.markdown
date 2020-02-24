@@ -615,3 +615,28 @@ Binary to int right to left
 
 - simple
 
+Synthesized & Inherited
+    - Synthesized : bottom to top
+    - Inherited: top to bottom (or across)
+
+Can do things that are not possible with CFG alone
+
+[b2d.y]
+
+G = B {}
+
+[updown.y]
+
+
+[Pre2Post] do it together instead of just showing
+
+input: prefix expression
+
+output: postfix expression
+
+Pre : + * 3 4 5
+
+In  : 3 * 4 + 5
+
+Post: 3 4 * 5 +
+
