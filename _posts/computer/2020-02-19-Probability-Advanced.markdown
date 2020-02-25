@@ -93,7 +93,7 @@ Mississippi be arranged?
 
 Since we've got identical letters, we have to get rid of redundancy
 
-- 11*10...1 / !4 * !4 * 2 = 34,650
+- 11*10...1 / 4! * 4! * 2 = 34,650
 
 ex) In how many ways can the letters of your first name be rearranged?
 
@@ -102,3 +102,34 @@ ex) In how many ways can the letters of your first name be rearranged?
 - two i's
 - 5*4...1 / 2 =  60 ways
 
+ex) In our class of 24 students, how many different trios can be formed?
+
+- order does not matter
+- Trio can be ordered in six ways
+- 24*23 .. 22 / 6 = 2024 ways that trios can be formed
+
+# Factorials and other notation
+
+Let n be a positive integer
+
+Then n factorial, denoted by n!, is given by n!=n(n-1)(n-2)...2*1
+
+We have the convention 0! = 1
+
+We can rewrite n! = n*(n-1)!
+
+
+
+The number of permutations of n objects taken r at a time 
+denoted by Pn,r is given by 
+
+```
+Pn,r = n!/(n-r)!
+```
+
+The number of combinations of n objects taken r at a time, 
+denoted Cn,r is given by 
+
+```
+Cn,r = n!/(n-r)!r!
+```

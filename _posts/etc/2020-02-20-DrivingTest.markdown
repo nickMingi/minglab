@@ -291,3 +291,18 @@ permalink: /:categories/:title.html
 93. Which of these statements is true about changing lanes
     - Look over your right shoulder for a right lane change and your left shoulder for a left lane change
 
+94. School zone mph limit
+    - 15mph
+
+95. When it's raining, you have to reduce the speed by
+    - 10 mph
+
+96. Blind spot is
+    - either side of back you can not see
+
+97. When you passing the car you have to back to your line
+    - when you see the car through side mirror
+
+98. Your car skids when rainning
+    - Driving too fast on this road condition
+
