@@ -33,3 +33,36 @@ Terms to know
 
 ![mysqldistinct](/minglab/assets/mysqldistinct.png)
 
+Dont't equal zero
+- where credit_total <> 0
+- where credit_total != 0
+
+The order of precedence for compound conditions
+- NOT
+- AND
+- OR
+
+![mysqlin](/minglab/assets/mysqlin.png)
+
+![mysqllike](/minglab/assets/mysqllike.png)
+
+![mysqlreg1](/minglab/assets/mysqlreg1.png)
+
+![mysqlreg2](/minglab/assets/mysqlreg2.png)
+
+![mysqlreg3](/minglab/assets/mysqlreg3.png)
+
+The default sequence for an ascending sort
+- null values
+- special characters
+- numbers
+- letters
+
+note
+- null values appear first in the sort sequence, even if you
+are using desc
+
+Don't count first two
+
+![mysqllimit](/minglab/assets/mysqllimit.png)
+
