@@ -1,7 +1,7 @@
 ---
 layout: "post"
 author: "mingi"
-title: "CPU"
+title: "CPU and Midterm"
 categories: "Computer OS"
 permalink: /:categories/:title.html
 ---
@@ -21,30 +21,46 @@ That's why we use concurrency
     - 3.5(all)
     - 4.4(all),4.5(all), 4.5.6, 4.7(all)
     - All of 5.7,5.8,5.9,5.10
+
 1. Forks
     - where child start after the fork? (Same place)
         - Right after fork
         - duplicate of child and starts at same place
         - make copy of PCB (Why make it starts at same place)
+
 2. Critical section
     - mutual exclusion
     - processes
     - bounded wait
+
 3. Concurrency
     - why do we use it?
     - what is the difference between concurrency and parallism
+
 4. Process concept
+
 5. Process scheduling
+
 6. Operations on processes
+
 7. Interprocess communication
+
 8. Communication in client-server systems
+
 9. Multicore programming
+
 10. Multithreading models
+
 11. The critical-section problem
+
 12. Peterson's solution
+
 13. Synchronization hardware
+
 14. Mutex locks
+
 15. Semaphores
+
 16. Spin lock -> busy waiting
 
 # Homework
@@ -102,9 +118,14 @@ do{
 ```
 
 Item     | Flag | Turn
-------------------
+---------|------|------
 mutex    | N    | Y
 progress1| Y    | N
 progress2| Y    | N
 bounded  | N    | Y
+
+- Banker's Algorithm
+    1. Available has to be equal or bigger than request
+    2. Calculate Need which is Max - Allocated
+    3. Need has to be equal or bigger than request
 
