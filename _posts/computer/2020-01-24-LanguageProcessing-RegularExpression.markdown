@@ -640,3 +640,33 @@ In  : 3 * 4 + 5
 
 Post: 3 4 * 5 +
 
+Consider source language:
+
+x := 3 + 4 * 6
+
+[PreTrans] = convert infix to prefix
+
+           = keep variable name; use IS for assignment
+
+Part 1 
+
+You all do this::
+
+Theme::: [[StackPost]]
+
+output : Postfix stackulator
+
+    In: x := 3 + 4
+    Out: push 3
+        push 4
+        add 
+        store x
+
+    In: x := 3 + 4 * 5
+    Out: push 3
+        push 4
+        push 5
+        mul
+        add
+        store x
+

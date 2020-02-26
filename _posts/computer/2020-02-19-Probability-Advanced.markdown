@@ -121,15 +121,44 @@ We can rewrite n! = n*(n-1)!
 
 
 The number of permutations of n objects taken r at a time 
-denoted by Pn,r is given by 
+denoted by Pn,r is given by (order matter)
 
 ```
 Pn,r = n!/(n-r)!
 ```
 
 The number of combinations of n objects taken r at a time, 
-denoted Cn,r is given by 
+denoted Cn,r is given by (order doesn't matter)
 
 ```
 Cn,r = n!/(n-r)!r!
 ```
+
+ex) In the game of pinochle, each of the 4 players are dealt 12 cards from a 48-card deck. How many possible pinochle hands are there?
+
+Order doesn't matter
+
+C48,12 = 48!/(48-12)!12! = 48!/36!12! = 48*47.....37/12!
+
+= 69,668,534,468
+
+ex) How many ways are there to arrange a pinochle hand from left to right?
+
+Order does matter
+
+P12,12 = 12!/(12-12)! = 12!/0! = 12! = 479,001,600
+
+ex) Your basketball team has twelve players: five guards, five forwards, and two centers. If you are going to start two guards, two forwards, and one center, how many starting lineups are possible?
+
+Order doesn't matter
+
+C5,2 times C5,2 times C2,1 = 5!/3!2! times 5!/3!2! times 2!/1!1!
+
+= 10 times 10 times 2 = 200
+
+ex) How many different five card poker hands are possible?
+
+Order doesn't matter
+
+C52,5 = 52!/(52-5)!5! = 2,598,960
+
