@@ -15,6 +15,7 @@ permalink: /:categories/:title.html
 # When did you take a risk, make a mistake, or fail? How did you respond, and how did you grow from that experience?
 
 # Describe a time you took the lead on a project
+- I had to take the lead on a UI project with 2 developers. We did not have a designer so I had to research designs like colors, layouts. Our goal was making C# framework within 6 month. 
 
 # What you do when you needed to motivate a group of individuals or promote collaboration on a particular project?
 
