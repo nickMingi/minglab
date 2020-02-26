@@ -38,6 +38,7 @@ That's why we use concurrency
     - what is the difference between concurrency and parallism
 
 4. Process concept
+    - A process is the unit of work in a modern time-sharing system.
 
 5. Process scheduling
 
@@ -62,6 +63,8 @@ That's why we use concurrency
 15. Semaphores
 
 16. Spin lock -> busy waiting
+
+17. Deadlock
 
 # Homework
 - Explain why spinlocks are not appropriate for single-processor systems yet
