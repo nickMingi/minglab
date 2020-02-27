@@ -188,19 +188,121 @@ That's why we use concurrency
         - Mutual exclusion: If one process is executing in its critical section, then no other processes can be executing in their critical sections.
         - Progress: If no process is executing in its critical section and some processes wish to enter their critical sections, then only those processes that are not executing in their remainder sections can participate in deciding which will enter its critical section next, and this selection cannot be postponed indefinitely.
         - Bounded waiting: There exists a bound, or limit, on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.
-
+        - there are two general approaches 
+            - preemptive kernels
+                - allows a process to be preempted 
+            - nonpreemptive kernels
+                - does not allow a process running to be preempted
+        - Obviously, a nonpreemptive kernel is essentially free from race conditions
+        - But preemptive kernel is popular since it is more responsive, suitable for real-time programming
 12. Peterson's solution
+    - The variable turn indicates whose turn it is
+    to enter its critical section.
+    - The flag array is used to indicate if a process
+    is ready to enter its critical section.
+    - Turn determines which of the two processes is allowed
+    to enter its critical section first
+    - Pi does not change the value of the variable
+    turn while executing the while statement 
+    Pi will enter the critical section(progress)
+    after at most one entry by Pj(bounded waiting)
 
 13. Synchronization hardware
+    - atomically : as one uninterruptible unit
+    - we note that process Pi can enter its critical section
+    only if either waiting[i]==false or key==false
+    - The value of key can become false only if
+    the test_and_set() is executed.
 
 14. Mutex locks
+    - simplest of synchronization tools.
+    - We use mutex lock to protect critical regions
+    and thus prevent race conditions.
+    - A process must acquire the lock before 
+    entering a critical section; It releases
+    the lock when it exits the critical section.
+    - acquire() or release() must be performed atomically
+    - it requires busy waiting also called spinlock
+    - Busy waiting wastes CPU cycles that some other
+    process might be able to use productively.
+    - spinlock do have an advantage no context switch
+    is required when a process must wait on a lock
+    and a context switch may take considerable time.
 
 15. Semaphores
-
+    - more robust tool than mutex lock also provide
+    more sophisticated ways.
+    - all modifications to the integer value of the 
+    semaphore in the wait() and signal() operations
+    must be executed indivisibly.
+    - when one process modifies the semaphore value,
+    no other process can simultaneously modify that
+    same semaphore value.
+    - There are two semaphores
+        - counting semaphore
+        - binary semaphore
+    - Binary semaphore behave similarly to mutex locks
+    - Semaphores has same problem as mutex lock
+    - To overcome the need for busy waiting, we can
+    modify the definition of the wait() and signal()
+    - Use block operation, control is transferred to the
+    CPU scheduler, which selects another process to execute.
+    - wakeup operation resumes the execution of a 
+    blocked process.
+    - But, it can be negative while busy waiting is not
+    - It is critical that semaphore operations be
+    executed atomically. We must guarantee that
+    no two processes can execute wait() and signal()
+    
 16. Spin lock -> busy waiting
 
 17. Deadlock
-
+    - The implementation of a semaphore with a
+    waiting queue may result in a situation where 
+    two or more processes are waiting indefinitely
+    for an event that can be caused only by one
+    of the waiting processes.
+    - Indefinite blocking or starvation problem
+    - A situation in which processes wait indefinitely 
+    within the semaphore. Indefinite blocking may
+    occur if we remove processes from the list
+    associated with a semaphore in LIFO order
+    - Priority inversion occurs only in systems
+    with more than two priorities, so one solution
+    is to have only two priorities.
+    - But typically these systems solve the problem
+    by implementing a priority-inheritance protocol.
+    - A process requests resources if the resources
+    are not available at that time, the process
+    enters a waiting state. Sometimes, a waiting process is
+    never again able to change state, because the
+    resources it has requested are held by other
+    waiting processes. 
+    - A process may utilize a resource in only 
+        - Request: if request cannot be granted 
+        immediately, then the requesting process
+        must wait until it can acquire the resource
+        - Use: Process can operate on the resource
+        - Release: Process releases the resource
+    - Deadlock can arise with four conditions
+        - Mutual exclusion: Only one process at a time
+        can use the resource
+        - Hold and wait: Process must be holding at
+        least one resource and waiting to acquire
+        additional resources that are currently
+        being held by other processes
+        - No preemption: Resource can be released
+        only voluntarily by the process holding it
+        after that process has completed its task
+        - Circular wait: remember the intersection
+    - Handling deadlocks
+        - use a protocol to prevent or avoid deadlcks
+        ensuring that the system will never enter
+        a deadlocked state
+        - allow the system to enter a deadlocked state,
+        detect it, and recover.
+        - ignore the problem altogether and pretend
+        that deadlocks never occur in the system
 # Homework
 - Explain why spinlocks are not appropriate for single-processor systems yet
 often used in multiprocessor systems
