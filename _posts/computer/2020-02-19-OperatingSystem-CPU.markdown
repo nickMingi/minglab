@@ -144,10 +144,50 @@ That's why we use concurrency
             - Either byte or message oriented data allowed 
 
 9. Multicore programming
+    - A thread is a basic unit of CPU utilization; 
+    - If the web server ran as a traditional single-threaded process, it would be able to service only one client at a time, and a client might have to wait a very long time for its request to be serviced.
+    - Four Benefit of multithreaded programming
+        - Responsiveness
+        - Resource sharing
+        - Economy
+        - Scalability
+    - A single-threaded process can run on only one processor, regardless how many are available.
 
 10. Multithreading models
-
-11. The critical-section problem
+    - Processing core is capable of executing only one thread at a time
+    - On a system with multiple cores, concurrency means that the threads can run in parallel, because the system can assign a separate thread to each core.
+    - A system is parallel if it can perform more than one task simultaneously.
+    - A concurrent system supports more than one task by allowing all the tasks to make progress.
+    - It is possible to have concurrency without parallelism
+    - Five areas present challenges
+        - Identifying tasks
+        - Balance
+        - Data splitting
+        - Data dependency
+        - Testing and debugging
+    - There are two types of parallelism
+        - Data parallelism
+        - Task parallelism
+    - Kernel threads : supported and managed directly by the OS
+    - User threads : supported above the kernel and are managed without kernel support
+    - Many-to-One model : One kernel many user threads, It has inability to take advantage of multiple processing cores.
+    - One-to-One model : It provides more concurrency than the many-to-one, overhead of creating kernel threads can burden the performance of an application.
+    - Many-to-many model : many user-level threads to a smaller or equal number of kernel threads. 
+    - Kernel can schedule only one thread at a time.
+    - Even though one-to-one model allows greater concurrency, developer has to be careful not to create too many threads within an application.
+    - Many-to-Many model suffers from neither these shortcomings.
+    - Many user-level threads to a smaller or equal number of kernel threads bul also allows a user-level thread to be bound to a kernel thread. called two-level model.
+    - User level threads are faster to create and manage than are kernel threads, because no intervention from the kernel is required.
+11. The critical-section 
+    - Several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place, is called a race condition.
+    - To guard against the race condition, we need to ensure that only one process at a time can be manipulating the variable counter. which is process synchronization
+    - Critical-section: no two processes are executing in their critical sections at the same time.
+    - Each process must request permission to enter its critical section.
+    - It consist of entry section, remainder section, and exit section.
+    - Critical section problem must satisfy three requirements
+        - Mutual exclusion: If one process is executing in its critical section, then no other processes can be executing in their critical sections.
+        - Progress: If no process is executing in its critical section and some processes wish to enter their critical sections, then only those processes that are not executing in their remainder sections can participate in deciding which will enter its critical section next, and this selection cannot be postponed indefinitely.
+        - Bounded waiting: There exists a bound, or limit, on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.
 
 12. Peterson's solution
 
