@@ -162,3 +162,39 @@ Order doesn't matter
 
 C52,5 = 52!/(52-5)!5! = 2,598,960
 
+# Probabilities in Poker
+
+Recall, there are C52,5 = 2,598,960 different five card poker hands
+
+ex) 5-card poker hands and their probabilities 
+
+a) straight flush(5 cards in a row of the same suit but no wrap around)
+
+number of hands = 4(# of straight flushes per suit)
+
+= 40 
+
+P(straight flush) = 40/C52,5 = 40/2,598,960 = 0.0000154
+
+b) full house (3 of a kind and 2 of a kind)
+
+number of hands = C13,1 . C12,1 . C4,3 . C4,2
+
+= 13 . 12 . C4,3 . C4.2 = 3744
+
+P(full house) = 3744 / C52,5 = 0.0014406
+
+c) flush(not straight flush)(5 cards of the same suit)
+
+Number of hands = 4 . C13,5 - 40(Straight flushes) = 5108
+
+P(flush that is not a straight flush) = 5108 / C52,5 = 0.00196540
+
+d) Straight(not a straight flush)
+
+Number of hands = 10 * C4,1 . C4,1 . C4,1 . C4,1 - 40(Straight flushes) = 10,200
+
+P(straight but not flush) = 0.0039246
+
+e) 4 of a kind
+

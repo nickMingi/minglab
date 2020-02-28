@@ -670,3 +670,12 @@ output : Postfix stackulator
         add
         store x
 
+# Exam
+
+1. Regular grammar can be expressed in Context Free Grammar
+2. a b+ c is equal abc, abbc, ...
+3. CFG(set of rules) S = aBc, B = bB, B = b
+4. Parse tree S(a,B(b,B(b)),c)
+5. Regular grammar S = aB, B = bB, B = bC, C = c S(a,B(b,B(b,C(c))))
+6. DFA
+7. 
