@@ -108,3 +108,40 @@ _main:
 ; si 
 
 {% endhighlight %}
+
+# Advanced
+
+- objdump -disassembly-all 
+- will show you assembly code but not quite .asm
+- We can see custom function as well
+
+{% highlight asm %}
+populateArray:
+ 8048426:	55 	pushl	%ebp
+ 8048427:	89 e5 	movl	%esp, %ebp
+ 8048429:	83 ec 10 	subl	$16, %esp
+ 804842c:	e8 b8 00 00 00 	calll	184 <__x86.get_pc_thunk.ax>
+ 8048431:	05 cf 1b 00 00 	addl	$7119, %eax
+ 8048436:	c7 45 fc 00 00 00 00 	movl	$0, -4(%ebp)
+ 804843d:	c6 45 fb 61 	movb	$97, -5(%ebp)
+ 8048441:	c7 45 fc 00 00 00 00 	movl	$0, -4(%ebp)
+ 8048448:	eb 20 	jmp	32 <populateArray+0x44>
+ 804844a:	8b 55 fc 	movl	-4(%ebp), %edx
+ 804844d:	8b 45 08 	movl	8(%ebp), %eax
+ 8048450:	01 c2 	addl	%eax, %edx
+ 8048452:	0f b6 45 fb 	movzbl	-5(%ebp), %eax
+ 8048456:	88 02 	movb	%al, (%edx)
+ 8048458:	8b 45 fc 	movl	-4(%ebp), %eax
+ 804845b:	89 c2 	movl	%eax, %edx
+ 804845d:	0f b6 45 fb 	movzbl	-5(%ebp), %eax
+ 8048461:	01 d0 	addl	%edx, %eax
+ 8048463:	88 45 fb 	movb	%al, -5(%ebp)
+ 8048466:	83 45 fc 01 	addl	$1, -4(%ebp)
+ 804846a:	8b 45 fc 	movl	-4(%ebp), %eax
+ 804846d:	3b 45 0c 	cmpl	12(%ebp), %eax
+ 8048470:	7c d8 	jl	-40 <populateArray+0x24>
+ 8048472:	b8 00 00 00 00 	movl	$0, %eax
+ 8048477:	c9 	leave
+ 8048478:	c3 	retl
+{% endhighlight %}
+
