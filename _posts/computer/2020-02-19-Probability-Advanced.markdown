@@ -196,5 +196,26 @@ Number of hands = 10 * C4,1 . C4,1 . C4,1 . C4,1 - 40(Straight flushes) = 10,200
 
 P(straight but not flush) = 0.0039246
 
-e) 4 of a kind
+e) 4 of a kind (aaaab)
+ 
+number of hands to start
+
+C13,1 . C4,4 . C48,1 = 624 hands
+
+P(4 of a kind) = 624/C52,5 = 0.0002401
+
+f) One pair, no better (aabcd)
+
+number of hands = C13,1 . C4,2 . C12,3 . C4,1 . C4,1 . C4,1 = 1,098,240
+
+P(one pair, no better) = 1098240/C52,5 = 0.4225690
+
+Suppose you hold two aces, two queens, and an 8 in a 5-card poker game with one other player. Upon replacing one card, what is the probability that you will make a full house?
+
+P(full house) = 4/47
+
+
+# Review
+
+If the numbers 3 and 4 appear consecutively(meant 3 and 4 must be together but can appear as 34 or 43) - Homework4
 
