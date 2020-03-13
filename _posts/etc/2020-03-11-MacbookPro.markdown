@@ -45,3 +45,5 @@ For this latest(2019) 16 inch version, we've got several benefits from it
 15. Command + Q : Quit
 16. Command + A : Select All
 17. Command + option + A : Deselect
+
+{% include advertisements.html %}
