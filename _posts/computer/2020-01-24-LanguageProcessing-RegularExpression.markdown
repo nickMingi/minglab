@@ -678,4 +678,26 @@ output : Postfix stackulator
 4. Parse tree S(a,B(b,B(b)),c)
 5. Regular grammar S = aB, B = bB, B = bC, C = c S(a,B(b,B(b,C(c))))
 6. DFA
-7. 
+
+# New Subject
+
+Use Lex & Yacc
+- validate date & time entries in a file
+- for simplicity assume 1 item per line
+
+input
+
+7:23am
+
+3/27/20
+
+8:11pm
+
+output
+
+7 23
+
+27.3.20
+
+20 11
+

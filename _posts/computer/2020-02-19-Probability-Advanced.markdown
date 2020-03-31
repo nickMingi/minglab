@@ -219,3 +219,110 @@ P(full house) = 4/47
 
 If the numbers 3 and 4 appear consecutively(meant 3 and 4 must be together but can appear as 34 or 43) - Homework4
 
+# Keno Type Games
+
+Players select or are given a set of numbers drawn without replacement from a larger set of numbers
+
+A player receives a card with the numbers 1-80 on it. Typically, a player marks 10 numbers on their card called a 10-spot ticket.
+
+Twenty numbers are randomly drawn by the house.
+
+If enough of their marked numbers are drawn, the player gets a payoff
+
+C80,10 = 1646492119120 (P of how many different ways)
+
+C20,10 = 184756 (P of how many ways all 10 marked can be drawn)
+
+184756 / C80,10 = 0.0000001122
+
+So, let's calculate P of having 9 marked numbers drawn
+
+The number of ways this can happen is 
+
+C20,9 * C60,1 = 10077600
+
+10077600 / C80,10 = 0.0000061206 
+
+8: C20,8 * C60,2 = 222966900
+
+P(8) = 0.0001354194
+
+7: C20,7 * C60,3 = 2652734400
+
+P(7) = 0.0016111431
+
+6: C20,6 * C60,4 = 18900732600
+
+P(6) = 0.0114793946
+
+5: C20,5 * C60,5 = 84675282048
+
+P(5) = 0.0514276877
+
+Total # of ways: 106461978304
+
+P of receicing a payoff = 0.0646598776
+
+P of losing your dollar is about 1 - 0.065 = 0.935
+
+Let's calculate expected value
+
+EV($1 Keno bet) = (P(10))(10000) + (P(9))(2600) + (P(8))(1300) + (P(7))(180)
+ + (P(6))(18) + (P(5))(2) - 1
+
+= -0.2074
+
+What about we change rule as n-spot ticket
+
+Suppose, we are matching 9
+
+C20,k * C60,n-k / C80,n
+
+
+# Bingo
+
+Since order within columns matters for the purpose of lining up rows, we need permutations
+
+Number of Bingo cards: P15,5 times P15,5 times P15,4 times P15,5 times P15,5
+
+We have over counted a bit here. Swaping rows will not affect game here
+
+EX) rows 1 and 2 with 5 and 4 so
+
+Number of essentially different bingo cards
+
+1/2 * above calculation
+
+Exercise
+
+a. In the first five draws of the 75 numbers in Bingo how many different sets of 5 numbers can be drawn? C75,5 = 17259390
+
+b. By counting the number of ways to win on a particular Bingo card with five in a row, compute the probability of winning with a single card after just 5 numbers have been drawn.
+
+4(C71,1) + 8 / C75,5
+
+292 / 17259390
+
+= 0.0000169183
+
+# Probability
+
+What is the probability of getting exactly three tails if I flip a fair coin eight times?
+
+HHTHHTHT, We need to count all such outcomes
+
+(1/2)^8
+
+(1/2)^3 * (1/2)^5
+
+P(exactly three tails) = C8,3 times (1/2)^3 times (1/2)^5
+
+# Exercise
+
+Flipping a honest coin 15 times compute the probability tails appears 12 or less times.
+
+= 1 - (P(13) + P(14) + P(15))
+
+= 1 - (C15,13 times . (1/2)^13 . (1/2)^2 + C15,14 . (1/2)^14 . (1/2)^1 + C15,15 )
+
+
