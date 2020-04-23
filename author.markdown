@@ -100,23 +100,13 @@ User Interface Manager.
 
 ---
 # Club Activity
-
+![clubactivity](/minglab/assets/clubactivity.jpg)
 ```
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
-d
+To be engaged in school activity, I tried several club activities including
+Korean Language Club. Since I'm from South Korea, club's people wanted me to
+Join their club to do language exchange. I could ask them about english expressions
+That I don't understand and I could teach them some Korean words that
+They want to know. It was fun and meaningful time at the same time.
 ```
 
 
