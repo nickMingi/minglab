@@ -681,6 +681,25 @@ output : Postfix stackulator
 
 # New Subject
 
+Front-end of the compiler
+- scanner & parser
+- deal with the source language
+- syntax & static semantics
+
+Raw characters --> scanner --> tokens
+
+Static semantics
+- things we can check at "compile" time
+
+Dynamic semantics
+- things that happen a "run" time
+- a little tougher to work with
+
+Symbol Table
+- track usage of user-defined names
+- add: on declaration
+- check: on name usage
+
 Use Lex & Yacc
 - validate date & time entries in a file
 - for simplicity assume 1 item per line
@@ -701,3 +720,76 @@ output
 
 20 11
 
+------------------------------------------
+
+Syntax directed translation
+- the source language specification and associated tools drive the translation process action rules on the parser
+- Language processing task connected to the rules used to define the syntax (parsing)
+
+And we'll generate a target image rather than 
+
+s0;
+while(cond)
+{
+    s1;
+    s2;
+}
+s3;
+
+stmt = while (cond) block
+
+$3.code (condition)
+
+$5.code (block)
+
+-------------------------------------------
+
+START
+        x: FLOAT;
+        y: INT;
+        z: FLOAT;
+        w: INT;
+
+        x := 2.25;
+        y := 3;
+        z := x + y;
+        w := x + y;
+
+FINISH
+
+
+START
+  x: INT;
+  y: INT;
+  x: INT;
+  yes: INT;
+  no:BOOL;
+  x:= 5;
+  y:=6.78;
+  yes := x + y ;
+  yes:=x+no;
+FINISH
+
+START
+y: FLOAT;
+
+y:= 3.45;
+y:= FLOAT;
+FINISH
+
+sscanf(yytext, "%d", &yylval);
+
+G = G $
+
+G = a B G
+
+G = b
+
+B = f B n
+
+B = h
+
+Recursive-Descent Parser
+
+- Top-down parsing can be viewed as an attempt to find a left-most derivation for an input string
+- 

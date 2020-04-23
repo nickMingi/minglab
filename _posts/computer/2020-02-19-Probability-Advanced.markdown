@@ -317,12 +317,48 @@ HHTHHTHT, We need to count all such outcomes
 
 P(exactly three tails) = C8,3 times (1/2)^3 times (1/2)^5
 
+Determine the probability of obtaining exactly r tails in eight flips of a fair coin, for each r where 0 <= r <= 8
+
+Number of Tails| Number of ways | Probability
+----------------------------------------------
+0              | C8,0           |    1/256
+1              | C8,1           |    1/32
+2              | C8,2           |    28/256
+3              | C8,3           |    56/256
+4              | C8,4           |    70/256
+5              | C8,5           |    56/256
+6              | C8,6           |    28/256
+7              | C8,7           |    8/256
+8              | C8,8           |    1/256
+
+When 0 <= r <= 8
+
+P(exactly r tails in 8 flips) = C8,r times (1/2)^r times (1/2)^8-r
+
+When 0 <= r <= n
+
+P(exactly r tails in n flips) = Cn,r times (1/2)^r times (1/2)^n-r
+
 # Exercise
+
+An honest die is rolled 10 times. Compute the probability that a 3 or 4 will turn up 5 or more times.
+
+P = P(3 or 4) = P(3) + P(4) = 2/6 = 1/3
+
+Q = 1 - P = 2/3
+
+P(5 or more successes) = 1-(P(4)+P(3)+P(2)+P(1)+P(0))
+
+= 1 - (C10,4.(1/3)^4.(2/3)^6 + C10,3.(1/3)^3.(2/3)^7 + C10,2.(1/3)^2.(2/3)^8 + C10,1.(1/3)^1.(2/3)^9 + C10,0.(1/3)^0.(2/3)^10)
+
+= .213128
 
 Flipping a honest coin 15 times compute the probability tails appears 12 or less times.
 
 = 1 - (P(13) + P(14) + P(15))
 
-= 1 - (C15,13 times . (1/2)^13 . (1/2)^2 + C15,14 . (1/2)^14 . (1/2)^1 + C15,15 )
+= 1 - (C15,13 times . (1/2)^13 . (1/2)^2 + C15,14 . (1/2)^14 . (1/2)^1 + C15,15 . (1/2)^15 . (1/2)^0 )
 
+
+# Exam3
 
